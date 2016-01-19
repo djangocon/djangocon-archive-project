@@ -17,7 +17,7 @@ The following websites were archived.
 | 2013 | US | :broken_heart: |
 | 2012 | Europe | :broken_heart: |
 | 2012 | US | :warning: |
-| 2011 | Europe | :broken_heart: |
+| 2011 | Europe | :warning: |
 | 2011 | US | :warning: |
 | 2010 | Europe | :broken_heart: |
 | 2010 | US | :broken_heart: |
