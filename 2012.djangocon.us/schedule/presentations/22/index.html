@@ -1,0 +1,845 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <title>DjangoCon US : Presentation: About Django from the Pyramid Guy</title>
+        
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        
+<link rel="stylesheet" href="../../../static/css/bde01dea2fa1.css" type="text/css" />
+
+
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        
+    <link rel="shortcut icon" href="../../../static/img/favicon.png">
+    
+    <style>
+        a.unbookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(http://2012.djangocon.us/static/img/star.png) no-repeat left;
+        }
+        a.bookmark {
+            text-decoration: none;
+            padding-left: 20px;
+            background: url(http://2012.djangocon.us/static/img/star_unselected.png) no-repeat left;
+        }
+        div.slot {
+            font-weight: bold;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    </head>
+    <body class="talk_detail" id="">
+
+        
+<header id="site_header">
+        <h1><a href="../../../index.html">DjangoCon US 2012 - Washington, DC</a></h1>
+        
+
+<div id="account-bar">
+
+    <a href="../../../account/login/index.html">Log in</a> or <a href="../../../account/signup/index.html">Sign Up</a>
+
+</div>
+
+        <nav id="site_nav">
+            <ul>
+    <li class="register_tab"><a href="http://djangoconus2012.eventbrite.com/">Register</a></li>
+    <li class="schedule_tab"><a href="../../index.html">Schedule</a></li>
+    <li class="venue_tab"><a href="../../../venue/index.html">Venue</a></li>
+    <li class="sponsors_tab"><a href="../../../sponsors/index.html">Sponsors</a></li>
+    
+    <li class="lightning_tab"><a href="../../../lightning/index.html">Lightning Talks</a></li>
+    <li class="sprints_tab"><a href="../../../sprints/index.html">Sprints</a></li>
+    <li class="openspaces_tab"><a href="../../../open-spaces/index.html">Open Spaces</a></li>
+    <li class="about_tab"><a href="../../../about/index.html">About</a></li>
+    <li class="tutorials_tab"><a href="../../../tutorials/index.html">Tutorials</a></li>
+</ul>
+
+        </nav>
+</header>
+
+
+
+        
+<section id="main_content">
+
+
+        
+
+        
+    
+    <h1 class="talk_title">About Django from the Pyramid Guy</h1>
+    <section class="meta">
+        A Talk presented by
+        
+        <a href="../../../speaker/profile/58/index.html">Chris McDonough</a>
+        
+
+      <div id="personal">
+      
+          <a href="../../../account/login/index.html@next=%25252Fschedule%25252Fpresentations%25252F22%25252F.html">log in</a> to bookmark.
+          
+      </div>
+    </section>
+    
+
+    
+
+    <h3>Audience level</h3>
+    <p>Novice</p>
+
+    <h3>Category</h3> 
+    <p>Other</p>
+    
+    
+    <h3>Time</h3>
+    <p>September 6th, 11:05 a.m. &ndash; 11:45 a.m.</p>
+    
+
+    <hr />
+
+    <h3>Description</h3>
+
+    <p class="description">An opinionated recounting of the features Django shares with the Pyramid web framework, and how the two frameworks differ, as well as a prescription for collaboration between the Django and Pyramid communities.</p>
+    
+    <hr />
+<div>
+    <h2>Abstract</h2>
+</div>
+    
+    <div class="abstract"><h1>About Django from the Pyramid Guy</h1>
+<h2>Who Am I</h2>
+<ul>
+<li>
+<p>BBS nerd in the 80s.</p>
+</li>
+<li>
+<p>Bad Perl hacker until Python.  Came to Python via Zope in 1999.
+  Worked at Digital Creations (aka Zope Corporation) until 2003.</p>
+</li>
+<li>
+<p>Primary author of: Pyramid web framework, Supervisor UNIX process control
+  system, Deform form system, Repoze collection of middleware, and other
+  unmentionables.  Contributor to Zope, WebOb, and lots of other OSS
+  projects.</p>
+</li>
+<li>
+<p>Quoting Glyph: "I've been doing IRC support for 10 years, so I'm pretty
+  much dead inside."</p>
+</li>
+</ul>
+<h2>What is a Web Framework</h2>
+<ul>
+<li>
+<p>A web framework receives a request, calls user code in order to return a
+  response.  Everything else is a bonus.</p>
+</li>
+<li>
+<p>Arguments about how a web framework implements "MVC" are usually
+  distractions.  Django gets this right.</p>
+</li>
+</ul>
+<h2>Django Docs Do It Right</h2>
+<ul>
+<li>
+<p>Django docs broke the Python documentation curve.</p>
+</li>
+<li>
+<p>Great resources for multiple audiences.</p>
+</li>
+</ul>
+<h2>Django Views Do It Right</h2>
+<ul>
+<li>
+<p>No magical globals (request or response).</p>
+</li>
+<li>
+<p>Django view lookup and execution is very fast.</p>
+</li>
+</ul>
+<h2>Django Forms Do It Right</h2>
+<ul>
+<li>
+<p>Decoupling of models from forms.</p>
+</li>
+<li>
+<p>Optional recoupling via modelforms.</p>
+</li>
+</ul>
+<h2>Django Convenience vs. Explicitness</h2>
+<ul>
+<li>No thread locals.</li>
+</ul>
+<h2>Django Extensibility Does It Right</h2>
+<ul>
+<li>
+<p>Replaceable backends for authentication.</p>
+</li>
+<li>
+<p>Replaceable backends for storage.</p>
+</li>
+<li>
+<p>Encourages an environment of plugins at different levels.</p>
+</li>
+</ul>
+<h2>Django Defaults Do It Right</h2>
+<ul>
+<li>
+<p>Django provides people with unambiguous ways to solve 80% of their web
+  development problems.</p>
+</li>
+<li>
+<p>Doesn't prevent specialization or use of external libraries.</p>
+</li>
+</ul>
+<h2>Django Reality Does It Right</h2>
+<ul>
+<li>
+<p>Can't argue with success.</p>
+</li>
+<li>
+<p>Scores of very successful sites built using Django.</p>
+</li>
+</ul>
+<h2>What is Pyramid</h2>
+<ul>
+<li>
+<p>Pyramid handles view lookup and execution and provides related convenience
+  APIs.  It also allows extensive configuration of these things.</p>
+</li>
+<li>
+<p>Pyramid is a corner of a corner of Django, magnified.</p>
+</li>
+<li>
+<p>James Bennett's PyCon 2012 "Django In Depth" tutorial: ~20 minutes out of 3
+  hours devoted to things that Pyramid actually does: low-level template API,
+  view lookup and execution, HTTP responses, middleware.</p>
+</li>
+<li>
+<p>Pyramid is independent of any particular peristence system.  It has no
+  built-in form generation system.  It does not prefer any particular
+  templating system.  It does not ship with an admininstrative application.</p>
+</li>
+<li>
+<p>Something like Pyramid could be used to build something like Django.</p>
+</li>
+</ul>
+<h2>Pylons Project</h2>
+<ul>
+<li>
+<p>Project lead consolidation decision.</p>
+</li>
+<li>
+<p>Attempt to get Pylons, TurboGears and <code>repoze.bfg</code> communities rowing in
+  the same direction.</p>
+</li>
+<li>
+<p>Pylons 1.x web framework shifted into “legacy” status.  Maintained
+  indefinitely.</p>
+</li>
+<li>
+<p>New development: Pyramid and related.</p>
+</li>
+<li>
+<p>Turbogears: wildcard.</p>
+</li>
+</ul>
+<h2>Is Pyramid a Microframework?</h2>
+<ul>
+<li>
+<p>Pyramid is sort of microframework-like.  You can write a Pyramid
+  application in a single file.</p>
+</li>
+<li>
+<p>Self-identifying microframeworks tend to suggest application development
+  patterns to its users which promote convenience over explicitness.  Pyramid
+  (for better or worse) does not do this, because it needs to be useful in
+  larger systems where these patterns can lead to extensibility problems.</p>
+</li>
+<li>
+<p>In reality, the term "microframework" is a marketing term, not a
+  technological term, so whether the answer is yes or no doesn't really
+  matter too much unless you have a stake in the project.</p>
+</li>
+</ul>
+<h2>Small Pyramid Program</h2>
+<pre><code>from wsgiref.simple_server import make_server
+from pyramid.config import Configurator
+from pyramid.response import Response
+
+def hello_world(request):
+   return Response('Hello %(name)s!' % request.matchdict)
+
+if __name__ == '__main__':
+   config = Configurator()
+   config.add_route('hello', '/hello/{name}')
+   config.add_view(hello_world, route_name='hello')
+   app = config.make_wsgi_app()
+   server = make_server('0.0.0.0', 8080, app)
+   server.serve_forever()
+</code></pre>
+<h2>Pyramid and Python 3</h2>
+<ul>
+<li>
+<p>Pyramid's current release (1.3) supports Python 3.2+ (as well as Python 2.6
+  and 2.7).</p>
+</li>
+<li>
+<p>Most existing add-ons already ported.  When feasible, we port add-on
+  dependencies (<code>beaker</code>, <code>WebOb</code>, <code>zope.*</code> packages).</p>
+</li>
+<li>
+<p>We have a committment to Python 3.  It involves lots of whining and
+  bitching.</p>
+</li>
+</ul>
+<h2>I'm No Genius</h2>
+<ul>
+<li>
+<p>Pyramid does things wrong.  Many parts of Pyramid make me cringe.
+  https://github.com/Pylons/pyramid/wiki/Mistakes</p>
+</li>
+<li>
+<p>The grass is always greener.</p>
+</li>
+</ul>
+<h2>Pyramid Docs</h2>
+<ul>
+<li>
+<p>Culture of documentation (if it's not documented, it's broken).</p>
+</li>
+<li>
+<p>Pyramid itself has ~800 printed pages of narrative and API documentation,
+  plus a few hundred pages of "cookbook" material.</p>
+</li>
+<li>
+<p>Comprehensive but pretty dry.</p>
+</li>
+</ul>
+<h2>Docs Pain</h2>
+<ul>
+<li>
+<p>Many pain points are related to plain old bad docs: our fault.  Docs are at
+  least 10X harder to write well than the associated code and take much
+  longer.  Most coders hate writing docs.  I write lots of documentation but
+  it's often not very good.</p>
+</li>
+<li>
+<p>But other pain points people experience when trying to learn Pyramid from
+  its docs is due to poorly documented dependencies (setuptools).  We need to
+  redocument subsystems "in context", for better or worse.  (HELP!)</p>
+</li>
+<li>
+<p>And some pain points are due to an audience mismatch; narrative
+  documentation assumes people know "Python" <em>and</em> "the web".  They often
+  need remedial help in one or both, which the docs don't provide.</p>
+</li>
+<li>
+<p>"Chipin" project raised ~$5K for documentation overhaul.</p>
+</li>
+</ul>
+<h2>Pyramid Friends</h2>
+<ul>
+<li>
+<p>Colander/Deform: form handling.</p>
+</li>
+<li>
+<p>SQLAlchemy: SQL database connectivity and querying.</p>
+</li>
+<li>
+<p>Pyramid-specific add-ons like <code>pyramid_mailer</code>, <code>pyramid_zodbconn</code>,
+  <code>pyramid_socketio</code>, <code>pyramid_mongodb</code>, and so forth.</p>
+</li>
+<li>
+<p>The typical Pyramid application makes use of some combination of add-ons.</p>
+</li>
+</ul>
+<h2>Scaffolding</h2>
+<ul>
+<li>
+<p>A scaffold renders a project.  A project is installable like any other
+  setuptools distribution (it has a <code>setup.py</code>, etc).</p>
+</li>
+<li>
+<p>The project depends on some combination of Pyramid, Pyramid plugins, and
+  other third-party libraries and frameworks.</p>
+</li>
+<li>
+<p><code>zodb</code>, <code>alchemy</code> and <code>starter</code> scaffolds provided by Pyramid itself.
+  Others are contributed to PyPI by third parties.</p>
+</li>
+</ul>
+<h2>Bindings Packages</h2>
+<p>A more generic package is specialized for convenient use under Pyramid via
+use of a bindings package.</p>
+<ul>
+<li>
+<p><code>deform</code> + <code>pyramid_deform</code>.</p>
+</li>
+<li>
+<p><code>repoze.who</code> + <code>pyramid_who</code>.</p>
+</li>
+<li>
+<p>2X documentation burden: document once in general package docs, document
+  again in bindings docs.  That's no fun.</p>
+</li>
+<li>
+<p>But this will happen anyway if your code is popular (Celery).</p>
+</li>
+</ul>
+<h2>Higher Level Frameworks</h2>
+<ul>
+<li>
+<p><code>ptah</code></p>
+</li>
+<li>
+<p><code>kotti</code></p>
+</li>
+<li>
+<p><code>poolyx</code></p>
+</li>
+<li>
+<p><code>substanced</code></p>
+</li>
+</ul>
+<h2>Packaging Is Like a Blast Shield</h2>
+<ul>
+<li>
+<p>A blast shield helps keep shrapnel out.</p>
+</li>
+<li>
+<p>It can also help keep shrapnel <em>in</em>.</p>
+</li>
+<li>
+<p>Shrapnel tends to penetrate anything not within a blast shield.</p>
+</li>
+<li>
+<p>Every piece of software eventually blows up.</p>
+</li>
+<li>
+<p>The more blast shields you have, the more the damage is contained.</p>
+</li>
+<li>
+<p>But blast shields obscure the landscape.  More work required for users.</p>
+</li>
+<li>
+<p>More packages add more documentation and conceptual overhead, and more
+  unwanted choice.</p>
+</li>
+</ul>
+<h2>Django Avoids Setuptools</h2>
+<ul>
+<li>
+<p>Setup.py develop of django doesn't work.</p>
+</li>
+<li>
+<p>Avoidance of setuptools also prevents use of console scripts
+  (e.g. django-admin).</p>
+</li>
+<li>
+<p>Django recreates some of the patterns that setuptools provides (i.e. test
+  discovery hooks).</p>
+</li>
+<li>
+<p>Developers whom are ignorant of distribution issues are very confused when
+  inevitably faced with them.</p>
+</li>
+</ul>
+<h2>Django Avoids Setuptools (2)</h2>
+<ul>
+<li>
+<p>Django's defacto avoidance of setuptools is understandable.  But it's not
+  helping to improve Python packaging.  Python packaging and distribution
+  needs you very badly.</p>
+</li>
+<li>
+<p>Fewer documentation issues to cope with, but contributing to docs for
+  setuptools would float all boats.</p>
+</li>
+</ul>
+<h2>Subclassing Is Convenient</h2>
+<ul>
+<li>
+<p>You don't have to explain a protocol (the protocol is Python).</p>
+</li>
+<li>
+<p>But offering extensibility via subclassing is often a poorer choice than
+  offering extensibility via composition and very explicit interfaces.</p>
+</li>
+<li>
+<p>Why?  People begin depending upon the implementation details of the classes
+  you tell them to subclass.  Unless you're extremely clear about what the
+  API of the superclass is, and the social contract to use nothing else but
+  the documented API exists, you'll be pressured into making retroactive
+  APIs.  Impossible to recover from without breaking b/w compat.</p>
+</li>
+<li>
+<p>Not uncommon to see a subclass of a subclass of a subclass of a subclass;
+  figuting out how the thing works can be an exercise in pain and multiple
+  editor windows.</p>
+</li>
+</ul>
+<h2>Globals are Convenient</h2>
+<ul>
+<li>
+<p>You don't have to explain a protocol for obtaining a value (the protocol is
+  <code>import</code>).</p>
+</li>
+<li>
+<p>But the development of circular imports is inevitable.</p>
+</li>
+<li>
+<p>Global registries make it impossible to embed more than one application
+  into the same Python process.</p>
+</li>
+</ul>
+<h2>Module-Scope Work Is Convenient</h2>
+<p>From Django tutorial, at module scope:</p>
+<pre><code>from django.contrib import admin
+admin.autodiscover()
+</code></pre>
+<h2>Module-Scope Work Is Convenient (2)</h2>
+<ul>
+<li>
+<p>These things can be done at module scope without concern:</p>
+</li>
+<li>
+<p>An import of another module or global.</p>
+</li>
+<li>
+<p>Assignment of a variable name in the module to some constant value.</p>
+</li>
+<li>
+<p>The addition of a function via a def statement.</p>
+</li>
+<li>
+<p>The addition of a class via a class statement.</p>
+</li>
+<li>
+<p>Control flow which may handles conditionals for platform-specific 
+    handling or failure handling of the above.</p>
+</li>
+<li>
+<p>Everything else is at least suspect.  Test runners and other code scanners
+  can import with abandon, and side effects are often undesirable.</p>
+</li>
+</ul>
+<h2>Pluggable Apps / Reusable Apps</h2>
+<ul>
+<li>
+<p>Pluggable apps probably aren't really that pluggable, reusable apps
+  probably aren't as reusable as you might like.</p>
+</li>
+<li>
+<p>IMO, even a framework as high-level as Django can't really offer such a
+  feature without stretching the truth just a little bit.</p>
+</li>
+<li>
+<p>The only thing that can truly offer pluggable apps: another app.  No
+  general-purpose framework can do a great job here.  (Examples: Wordpress,
+  Jenkins, Plone).</p>
+</li>
+</ul>
+<h2>Rendering Is Meta-View</h2>
+<ul>
+<li>
+<p><code>render_to_response</code> using template in view is no fun to test.</p>
+</li>
+<li>
+<p>Returning a dict from a view callable is more fun to test.</p>
+</li>
+</ul>
+<h2>Unit Tests</h2>
+<ul>
+<li>
+<p>Exclusive use of Django test client for tests will cause test suite to run
+  more slowly than necessary.</p>
+</li>
+<li>
+<p>A slow enough test suite won't be run before commit.</p>
+</li>
+<li>
+<p>Testers who don't understand any type of testing other than "system" or
+  "integration" testing tend to bring poor testing practices to unrelated
+  systems.</p>
+</li>
+<li>
+<p>Using setuptools provides nice hooks for test discovery and execution.</p>
+</li>
+</ul>
+<h2>Static Files</h2>
+<ul>
+<li>
+<p>Python WSGI servers are getting better at serving static files.
+  E.g. Gunicorn supports <code>sendfile</code> on UNIX.</p>
+</li>
+<li>
+<p>Might be time to reconsider offloading media to a dedicated non-Python
+  server and make use of what's available in WSGI-land.</p>
+</li>
+</ul>
+<h2>Community</h2>
+<ul>
+<li>
+<p>Pyramid community is maybe 10% the size of the Django community.</p>
+</li>
+<li>
+<p>It's growing.</p>
+</li>
+<li>
+<p>Your success is our success.  I'd be very pleased to have Pyramid be
+  considered the #2 Python web framework (at least for "Python people").
+  Forever.</p>
+</li>
+</ul>
+<h2>Collaboration (Low-Level)</h2>
+<ul>
+<li>
+<p>Create adapter for WebOb or Werkzeug that implements the Django request
+  API?</p>
+</li>
+<li>
+<p>Create an adapter for SQLAlchemy that implements the Django ORM API?</p>
+</li>
+<li>
+<p>These are likely losers.  They are "30 year plans".  Things change so fast.
+  Who will pay immediately?  Who will benefit immediately?</p>
+</li>
+<li>
+<p>Might be better to try to use common non-domain-specific dependencies
+  (e.g. setuptools, virtualenv, WSGI middleware, etc).  It would be a great
+  win to share documentation burden, even if we had to "fork" it for our
+  own contextual requirements.</p>
+</li>
+</ul>
+<h2>Collaboration (High-Level)</h2>
+<ul>
+<li>
+<p>Django is limited by backwards compatibility concerns.  It's impractical to
+  make large architectural changes now.  Your users would kill you.</p>
+</li>
+<li>
+<p>But I could imagine somebody from the Django community creating a
+  "Django-NG" or a Django-like system from whole cloth.  Or break Django
+  apart into something that isn't quite bw compatible.</p>
+</li>
+<li>
+<p>It might make sense to consider Pyramid or another smaller framework as a
+  base for such an effort.  If you used Pyramid, you'd get URL routing,
+  internationalization, template bindings, configuration extensibility,
+  flexible view lookup and execution, an event system, security,
+  documentation, Python 3 compatibility, and other things.  <code>ptah</code> is such
+  a system right now.</p>
+</li>
+<li>
+<p>Pyramid community is very enthusiastic, friendly, helpful, and experienced.</p>
+</li>
+</ul>
+<h2>Promoting Python</h2>
+<ul>
+<li>
+<p>I challenge you to not be complacent.</p>
+</li>
+<li>
+<p>I challenge you to investigate how other frameworks work.</p>
+</li>
+<li>
+<p>I challenge you to embrace existing Python packaging and distribution
+  tools.</p>
+</li>
+<li>
+<p>I challenge you to port quickly to Python 3.  Commit to supporting it in
+  your add-ons and helping folks who have existing add-ons port.</p>
+</li>
+<li>
+<p>I challenge you to speak out when folks bash competitors.  Haters are
+  everywhere, and when someone bashes Pyramid, Flask, Bottle, or Zope, and
+  nobody defends against it, the hate will eventually come back to harm you.</p>
+</li>
+</ul>
+<h2>Unknowns</h2>
+<ul>
+<li>
+<p>Django Class-Based Views Might Not Do It Right.  <code>as_view</code>.  Hmm.  All
+  views in Pyramid are potentially generic.  They have a context passed to
+  them.  Class-based views in Pyramid are not things handed down from "good
+  devs" to reuse, they're just normal things.</p>
+</li>
+<li>
+<p>How does Django allow for configuration extensibility?  Conflict detection?</p>
+</li>
+<li>
+<p>Event system</p>
+</li>
+<li>
+<p>Alternate templating languages</p>
+</li>
+<li>
+<p>Exception views</p>
+</li>
+<li>
+<p>View predicates</p>
+</li>
+<li>
+<p>Transaction management</p>
+</li>
+</ul></div>
+
+
+</section>
+
+
+        
+            <div id="footer">
+                <div class="inner">
+                    <div class="container">
+                        
+    <hr />
+    <footer id="page_footer">
+        
+        
+        
+            <section id="page_sponsors">
+                <h3>Sponsors</h3>
+                
+                    <a href="http://www.newrelic.com/"><img src="../../../media/cache/ad/9c/ad9ca4f829a01fbf5d9c3915d47fd26a.jpg" alt="New Relic, Inc."/></a>
+                
+                    <a href="http://cmgdigital.com/"><img src="../../../media/cache/f0/d7/f0d758d236ec6dc4b164c730a8e69bdd.jpg" alt="CMG Digital"/></a>
+                
+                    <a href="http://www.revsys.com/"><img src="../../../media/cache/7d/bf/7dbfe4e3b375fb938cef12c7e756b2fa.jpg" alt="Revolution Systems"/></a>
+                
+                    <a href="http://www.jetbrains.com/pycharm/"><img src="../../../media/cache/87/66/87664ff9a841cb55780a33310824b904.jpg" alt="Jet Brains"/></a>
+                
+                    <a href="http://www.caktusgroup.com/"><img src="../../../media/cache/be/e4/bee4e0b8539a7dfd3895a00bd1f0f638.jpg" alt="Caktus Consulting Group, LLC"/></a>
+                
+                    <a href="http://www.webcubecms.com/"><img src="../../../media/cache/f8/a4/f8a473da2393bfb101699663b8abc553.jpg" alt="Web Cube"/></a>
+                
+                    <a href="http://www.chicagodjango.com/"><img src="../../../media/cache/32/7f/327fc581684a89a146cb9d7edd811ebe.jpg" alt="Imaginary Landscape, LLC"/></a>
+                
+                    <a href="http://www.github.com/"><img src="../../../media/cache/6c/bf/6cbf65587c1e36b49317514ae45a1254.jpg" alt="GitHub"/></a>
+                
+                    <a href="https://www.counsyl.com/"><img src="../../../media/cache/6b/46/6b46a0cd033de096b0ef067d8259820a.jpg" alt="Counsyl"/></a>
+                
+                    <a href="http://caci.com./"><img src="../../../media/cache/b2/37/b2370064505dcb72291927c0a73467bc.jpg" alt="CACI"/></a>
+                
+                    <a href="http://www.teamcarney.com/default.aspx?utm_source=djangocon&amp;utm_medium=banner&amp;utm_campaign=djangocon"><img src="../../../media/cache/8b/4b/8b4bb5bf17d464c85f27a09a59d0e274.jpg" alt="Carney"/></a>
+                
+                    <a href="http://celerity.com/"><img src="../../../media/cache/da/1f/da1f620155d4b81266888cb4ca6fad1c.jpg" alt="Celerity"/></a>
+                
+                    <a href="http://lab305.com/"><img src="../../../media/cache/07/48/0748738521108c82f10fe19726e37849.jpg" alt="Lab 305"/></a>
+                
+                    <a href="http://www.wisertogether.com/"><img src="../../../media/cache/37/5a/375a48e8fcecb60a7a89d3e74c236367.jpg" alt="Wiser Together"/></a>
+                
+                    <a href="http://www.mozilla.com/"><img src="../../../media/cache/4c/a4/4ca41c7eee1175790a957bafb4461b84.jpg" alt="Mozilla"/></a>
+                
+                    <a href="http://tryolabs.com/"><img src="../../../media/cache/e5/f9/e5f9d4bf7df2edc3b8d632246b90da8f.jpg" alt="Tryolabs"/></a>
+                
+                    <a href="http://socialcodeinc.com/"><img src="../../../media/cache/e6/c6/e6c6e0e96aabfc673739e196a3f42497.jpg" alt="SocialCode"/></a>
+                
+                    <a href="http://toastdriven.com/"><img src="../../../media/cache/60/c0/60c0674b42a339f11f6ae9cf32401556.jpg" alt="Toast Driven"/></a>
+                
+                    <a href="http://www.devsar.com/"><img src="../../../media/cache/74/44/74448dd5c58c1499811cfdaded3daf3b.jpg" alt="Devsar"/></a>
+                
+                    <a href="http://lincolnloop.com/"><img src="../../../media/cache/ad/83/ad831d1142c5a4cf59b7e943e5398ee6.jpg" alt="Lincoln Loop"/></a>
+                
+                    <a href="http://www.stickermule.com/"><img src="../../../media/cache/ef/39/ef3954931c41170fe37abde34dda6c29.jpg" alt="Sticker Mule"/></a>
+                
+                    <a href="http://unifiedsocial.com/"><img src="../../../media/cache/0a/59/0a5923d4975f4326bead3e38de0c50db.jpg" alt="Unified"/></a>
+                
+                    <a href="http://theopenbastion.com/"><img src="../../../media/cache/12/34/1234b43bbc5a7db6efd6a2cdcaa6ca90.jpg" alt="The Open Bastion"/></a>
+                
+                    <a href="http://www.chicagodjango.com/"><img src="../../../media/cache/84/81/8481bde3f62f559916ba24b83d59ac6c.jpg" alt="Imaginary Landscape"/></a>
+                
+            </section>
+        
+        <hr />
+        
+        
+<p>DjangoCon US 2012 is a production of <a href="http://theopenbastion.com">The Open Bastion</a>.</p>
+<p><strong>Django</strong> is a registered trademark of the <a href="http://djangoproject.com/foundation">Django Software Foundation</a>.</p>
+<p>Questions? Comments? <a href="mailto:djangocon@holdenweb.com">djangocon@holdenweb.com</a>.</p>
+
+    </footer>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+            <script src="../../../static/pinax/js/jquery-1.7.1.min.js"></script>
+            <script src="../../../static/pinax/js/jquery.form.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-alert.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-modal.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-button.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-carousel.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-collapse.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-dropdown.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-scrollspy.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-tab.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-tooltip.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-popover.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-transition.js"></script>
+            <script src="../../../static/bootstrap/js/bootstrap-typeahead.js"></script>
+            <script src="../../../static/pinax/js/theme.js"></script>
+            
+        
+
+        
+    
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a.bookmark").live("click", function() {
+                aElem = $(this);
+                instructions = aElem.next(".instructions")
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=add;csrfmiddlewaretoken=844d93ba92ff165d207fd1c6c0c115f7",
+                    success: function() {
+                        aElem.removeClass("bookmark");
+                        aElem.addClass("bookmarked");
+                        instructions.html("&larr; click to unbookmark");
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+            $("a.bookmarked").live("click", function() {
+                aElem = $(this);
+                instructions = aElem.next(".instructions")
+                $.ajax({
+                    type: "POST",
+                    url: this.href,
+                    data: "action=delete;csrfmiddlewaretoken=844d93ba92ff165d207fd1c6c0c115f7",
+                    success: function(response) {
+                        aElem.removeClass("bookmarked");
+                        aElem.addClass("bookmark");
+                        instructions.html("&larr; click to bookmark")
+                    },
+                    error: function(xhr, options, error) {
+                        alert(xhr.status);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+
+    </body>
+</html>

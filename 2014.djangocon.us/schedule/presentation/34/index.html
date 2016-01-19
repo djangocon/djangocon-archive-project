@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+
+
+<head>
+<html lang="en-us">
+  <meta charset="UTF-8">
+  <title>DjangoCon | Presentation: Building a REST API with Django &amp; Django REST Framework</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  
+  <link href="../../../site_media/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
+  <link href="../../../site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="../../../site_media/static/markitup/sets/markdown/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+  <link href="../../../site_media/static/css/main.css" rel="stylesheet">
+  <link href="../../../site_media/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  
+  
+
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  
+
+  
+    <link href="https://2014.djangocon.us/site_media/static/img/favicon.ico" rel="shortcut icon" />
+    <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+    
+<script type="text/javascript" src="../../../site_media/static/markitup/ajax_csrf.js"></script>
+<script type="text/javascript" src="../../../site_media/static/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../../../site_media/static/markitup/sets/markdown/set.js"></script>
+
+    
+  
+</head>
+
+<body class="" id="">
+
+
+
+    
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../index.html">
+          <img width="114" height="" class="img-responsive" src="../../../site_media/static/images/logo.png"></a>
+          
+        </div>
+        <div class="navbar-collapse collapse">
+          
+            
+<ul class="nav navbar-nav">
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Schedule
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../call_for_proposals/index.html" >Call for Proposals</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../index.html" >Talks Schedule</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../tutorials/list/index.html" >Tutorials</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../lightning_talks_open_spaces/index.html" >Lightning Talks + Open Spaces</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sprints/index.html" >Sprints</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../night_outings/index.html" >Social Events</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                About
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../about/index.html" >What is Djangocon?</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../faq/index.html" >FAQ</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../code_of_conduct/index.html" >Code of Conduct</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../contact/index.html" >Contact Us</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Sponsors
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sponsors/index.html" >DjangoCon Sponsors</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sponsors/learn/index.html" >Learn about Sponsorships</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sponsors/apply/index.html" >Become A Sponsor</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Register
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../registration_info/index.html" >Registration Info</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="http://dcus14.eventbrite.com/" >Register</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Venue
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../hotels/index.html" >Hotels</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../travel/index.html" >Travel</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../blog/index.html" >
+                News
+                
+            </a>
+            
+        </li>
+    
+</ul>
+          
+          
+            
+
+
+
+<div class="" id="capsules">
+    <ul class="nav navbar-nav navbar-right">
+        
+            <li><a href="../../../account/login/index.html">Log in</a></li>
+            
+                <li><a href="../../../account/signup/index.html">Sign up</a></li>
+            
+        
+    </ul>
+</div>
+
+<form id="accountLogOutForm" style="display: none;" action="https://2014.djangocon.us/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='BmSYQ0cEXK6NzFmG7YU6hZ3HDGVC5mj0' />
+</form>
+
+          
+        </div>
+        <!--/.nav-collapse -->
+        
+      </div>
+    </div>
+    
+
+
+<div class="row small-header">
+    <div class="container">
+        <h1></h1>
+    </div>
+</div>
+
+
+<div class="wrapper topspace">
+
+    
+
+
+      
+       <div class="container">
+
+		
+	
+</div>
+
+
+          
+<div class="container">
+    
+        <h4>
+            Wednesday
+            2:50 p.m.&ndash;3:20 p.m.
+        </h4>
+    
+    <h2>Building a REST API with Django &amp; Django REST Framework</h2>
+
+    <h4>
+        
+            <a href="../../../speaker/profile/48/index.html">Kenny Yarboro</a>
+    </h4>
+
+    <dl class="dl-horizontal">
+        <dt><h3>Audience level:</h3></dt>
+        <dd style="margin-bottom: 0;">Novice</dd>
+    </dl>
+
+    <h3>Description</h3>
+
+    <div class="description"><p>REST APIs are capable of providing valuable services within and beyond an organization.  Django and the Django REST Framework enabled my team to quickly deliverable a highly functional REST API that was customized to our unique needs.  This discussion will cover how easy Django makes it to build such an application and how to overcome potential pitfalls.  </p></div>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><p>Introduction</p>
+<ol>
+<li>
+<p>Quick Introduction of the Django REST Framework</p>
+</li>
+<li>
+<p>Basic Building Blocks</p>
+<ol>
+<li>Models</li>
+<li>Serializers</li>
+<li>Views</li>
+<li>URLs</li>
+<li>Settings</li>
+</ol>
+</li>
+<li>
+<p>Enabling Additional Data Formats</p>
+<ol>
+<li>JSON</li>
+<li>XML</li>
+</ol>
+</li>
+</ol>
+<p>Considerations Before Building a Custom API  </p>
+<ol>
+<li>
+<p>'Disabling' Certain API Views</p>
+<ol>
+<li>Who can access which views?  </li>
+<li>How do you 'disable' a view?  </li>
+</ol>
+</li>
+<li>
+<p>Adding Custom Validators &amp; Handling Validation Errors</p>
+<ol>
+<li>When to use an existing validator?</li>
+<li>When to create a custom validator?</li>
+<li>What to do when data is invalid?</li>
+</ol>
+</li>
+<li>
+<p>Manipulating Data Flowing within the Application</p>
+<ol>
+<li>What data does the application need that is NOT part of the model?</li>
+<li>What data needs to be returned to the user that is NOT part of the model?</li>
+</ol>
+</li>
+<li>
+<p>Enabling a Single API Call to Accept Multiple Input Formats</p>
+<ol>
+<li>When would this be necessary?</li>
+<li>How can backwards-compatibility be maintained when re-designing an API view?</li>
+</ol>
+</li>
+<li>
+<p>Customizing the Save Process Behind an API POST</p>
+<ol>
+<li>Why would this need to be done?</li>
+<li>How can a single API POST save data across multiple models and database tables?<ol>
+<li>Considerations for Saving Each Database Entry</li>
+<li>Considerations for Using Bulk Insert</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Documentation Considerations</p>
+<ol>
+<li>Built-in Browsable API</li>
+<li>Swagger</li>
+<li>Serializer Considerations</li>
+</ol>
+</li>
+<li>
+<p>Closing Remarks</p>
+</li>
+</ol></div>
+</div>
+
+
+
+
+      
+
+    
+</div><!--end of wrapper-->
+
+    
+
+    <div class="row" id="footer">
+      <div class="container">
+
+        <div class="col-md-6 col-centered">
+          <div class="contact-us">Questions? Comments?</div><a href="../../../contact/index.html">Contact Us</a><br>
+          Design + Build by
+              <a href="http://www.caktusgroup.com">Caktus Consulting Group, LLC</a> using <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a><br />
+              Hosted on <a href="https://gondor.io">Gondor</a>
+            <p>©2016 DjangoCon</p>
+          </div>
+       </div>
+    </div>
+    
+
+
+
+  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../../../site_media/static/js/vendor/bootstrap.min.js"></script>
+  
+  
+
+  
+    
+  
+</body>
+</html>

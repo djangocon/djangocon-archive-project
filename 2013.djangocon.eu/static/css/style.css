@@ -1,0 +1,799 @@
+@font-face {
+    font-family: "RiotSquad";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/RiotSquadNF.ttf") format("truetype");
+}
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*======================================================
+======================= DEFAULTS =======================
+======================================================*/
+
+body {
+    font-family: "Lato", Verdana, sans-serif;
+    background-color: #fcfdf1;
+    background-image: url('../img/bg_center_2.png');
+    background-repeat: no-repeat;
+    background-position: center 200px;
+    line-height: 120%;
+    transition: background-image 1.4s ease-in-out;
+    -moz-transition: background-image 1.4s ease-in-out;
+    -webkit-transition: background-image 1.4s ease-in-out;
+}
+
+h2 {
+    color: #d01e32;
+    font-family: "RiotSquad", sans-serif;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+    line-height: 130%;
+    margin-top: 20px;
+}
+
+
+.second_background {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: url('../img/bg_center_1.png') no-repeat center top;
+}
+.morespace {
+    background: url('../img/bg_center_1_morespace.png') no-repeat center top;
+}
+.nobackground {
+    background-image: none;
+}
+.transparent {
+    background-image: url('../img/bg_center_1.png');
+}
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header {
+    font-family: "RiotSquad", Impact, fantasy;
+    font-size: 30px;
+}
+.header .small {
+    font-family: "Lato", Verdana, sans-serif;
+    font-size: 20px;
+}
+h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin:20px 0 10px;
+}
+b, strong {
+    font-weight: bold;
+}
+.top_menu {
+    background:#172423;
+    height: 57px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.logo_wrapper {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+    color: #d01e32;
+}
+.top_menu ul {
+    float: right;
+}
+.top_menu ul li {
+    display: inline-block;
+    font-size: 18px;
+    color: #dad9a4;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.top_menu ul li a {
+    color: #dad9a4;
+}
+.top_logo {
+    margin-left: 20px;
+    position: relative;
+    z-index:2000;
+}
+.box_container {
+    width: 460px;
+    padding-left: 20px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+/*======================================================
+======================= HOMEPAGE =======================
+======================================================*/
+.tickets {
+    margin: 0 0 40px 30px;
+    width:530px;
+    clear: both;
+}
+.tickets .image {
+    float: left;
+    margin: 0 15px 0 0;
+}
+.tickets p {
+    font-size: 18px;
+    padding: 20px 0 10px 0;
+    line-height: 130%;
+}
+
+.about {
+    width: 400px;
+    margin-left: 20px;
+}
+
+.about .header {
+    width: 403px;
+    height: 67px;
+    background: url('../img/header.png') no-repeat;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.about .body {
+    padding-left: 44px;
+    padding-right: 10px;
+}
+
+.about .footer {
+    background: url('../img/e_about_dots.png') no-repeat;
+    margin-left: 40px;
+    margin-top: 14px;
+    height: 5px;
+    width: 403px;
+}
+
+/** location **/
+.location {
+    margin-top: 70px;
+    width: 380px;
+    margin-left: 20px;
+}
+
+.location .header {
+    width: 403px;
+    height: 57px;
+    background: url('../img/header.png') no-repeat;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.location .body {
+    padding-left: 44px;
+    padding-right: 10px;
+    margin-bottom:10px;
+    text-align: center;
+}
+.location .body:last-child {
+    text-align: center;
+}
+.location p {
+    margin-bottom:5px;
+}
+.location p:last-child {
+    padding: 0 5px;
+}
+
+.location .map {
+    background: url('../img/e_map.png') no-repeat;
+    margin-top: 14px;
+    padding-top: 20px;
+    padding-left: 25px;
+    height: 171px;
+    width: 400px;
+}
+
+/** networks **/
+.networks {
+    height: 120px;
+    position: absolute;
+    top:150px;
+    padding-left: 500px;
+}
+
+.networks .network {
+    float: left;
+    padding: 7px;
+}
+
+.networks .network .counter {
+    background: url('../img/e_net_count.png') no-repeat;
+    width: 66px;
+    height: 34px;
+    font-size: 20px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.networks .network .icon {
+    margin: 7px 12px;
+    width: 39px;
+    height: 37px;
+}
+
+.icon.google {
+    background: url('../img/i_g.png') no-repeat;
+}
+
+.icon.facebook {
+    background: url('../img/i_f.png') no-repeat;
+}
+
+.icon.twitter {
+    background: url('../img/i_t.png') no-repeat;
+}
+.icon.lanyard {
+    background: url('../img/i_l.png') no-repeat;
+}
+
+/** twitter **/
+.twitter {
+    background: url('../img/b_twitter_new.png') no-repeat;
+    width: 437px;
+    height: 702px;
+    margin-top:-30px;
+}
+.twitter-box {
+    margin-top:100px;
+}
+.twitter .header {
+    height: 67px;
+    width: 330px;
+    padding-top: 45px;
+    padding-left: 60px;
+    text-align: center;
+}
+
+.red {
+    color: #d01e32;
+}
+
+.twitter .tweets {
+    width: 320px;
+    height: 220px;
+    margin-top: 21px;
+    margin-left: 64px;
+    overflow: hidden;
+}
+
+.twitter .tweets a {
+    color: black;
+}
+
+.twitter .tweets .tweet {
+    border-bottom: 1px dashed #42A59F;
+    padding: 6px 0;
+}
+.twitter .tweets:last-child {
+    border-bottom: none;
+}
+
+/** newsletter **/
+.newsletter {
+    margin-top: -160px;
+    background: url('../img/e_newsletter.png') no-repeat 20px 35px;
+    width: 433px;
+    height: 319px;
+}
+
+.newsletter .header {
+    width: 403px;
+    height: 52px;
+    background: url('../img/header.png') no-repeat;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.newsletter .body {
+    margin-left: 42px;
+    width: 340px;
+}
+
+.newsletter .form {
+    margin-left: 42px;
+    width: 340px;
+    text-align: center;
+}
+
+.newsletter .form td {
+    padding-top: 5px;
+}
+
+.newsletter .form label,
+.newsletter .form input[type=text], .newsletter .form input[type=email] {
+    line-height: 18px;
+    background-color: #ececd1;
+    padding: 12px 3px;
+}
+
+.newsletter .form label {
+    display: block;
+    font-size: 16px;
+    color: #d01e32;
+    width: 60px;
+}
+
+.newsletter .form input[type=text], .newsletter .form input[type=email] {
+    font-size: 14px;
+    border: 0px;
+    width: 268px;
+}
+
+.newsletter .form input[type=submit] {
+    font-family: "RiotSquad", Impact, fantasy;
+    font-size: 24px;
+    background: url('../img/e_button.png') no-repeat;
+    width: 152px;
+    height: 49px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/*======================================================
+===================== TEXT DEFAULT =====================
+======================================================*/
+.popup {
+    width: 839px;
+    margin-bottom: 40px;
+    line-height: 140%;
+}
+.popup p {
+    margin-bottom: 10px;
+}
+
+.popup .header {
+    height: 80px;
+    width: 764px;
+    background: url('../img/popup.png') no-repeat;
+    padding: 20px 30px 0 45px;
+}
+.popup .header .a, .popup .header .a:hover {
+    color: #000 !important;
+}
+
+.popup .date {
+    text-align: right;
+    font-family: "Lato", Verdana, sans-serif;
+    font-size: 16px;
+    margin-top:30px;
+}
+.popup .content {
+    background: white;
+    border-left: 14px solid black;
+    border-right: 6px solid black;
+    border-bottom: 6px solid black;
+    padding: 10px 25px 20px 25px;
+    margin-left:14px;
+    width: 749px;
+}
+#team .popup .content img {
+    float: left;
+    margin: 0px 30px 30px 0;
+}
+.read_more {
+    color: #000;
+}
+
+/*======================================================
+======================= SPEAKERS =======================
+======================================================*/
+
+#speakers {
+    width:960px;
+    clear: both;
+}
+#speakers div {
+    width:220px; height:241px; padding:45px 0 0 8px; background: url(../img/speakers_frame.png) no-repeat; background-size: 220px auto; text-align: center; float:left;
+    margin: 0 10px 10px 0;
+}
+#speakers div img {
+    width: 160px;
+    height: 160px;
+}
+#speakers div h4 {
+    font-family: "Lato", Verdana, sans-serif;
+    font-size: 17px;
+    color: #172423;
+    font-weight: bold;
+    margin:2px 0px 0px 0px;
+    padding:0;
+}
+#speakers div span {
+    color: #d01e32;
+    font-family: "Lato", Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+p.circusrole{
+    color: #d01e32;
+    font-family: "Lato", Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin:0 0 10px 0;
+    padding: 0 !important;
+}
+
+/*======================================================
+======================= SPONSORS =======================
+======================================================*/
+
+#sponsors {
+    width: 680px;
+}
+#sponsors .header {
+    width: 373px;
+    height: 47px;
+    padding: 20px 0 0 30px;
+    font-family: "RiotSquad", Impact, fantasy;
+    font-size: 32px;
+    color: #000;
+    background: url(../img/header.png) no-repeat;
+}
+#sponsors .logos {
+    padding: 50px 0 10px 30px;
+}
+#sponsors .logos h3 {
+    font-size: 25px;
+    float: left;
+    color: #d01e32;
+    margin: 0;
+}
+#sponsors .logos p {
+    float:right;
+    width: 500px;
+    text-align: left;
+}
+#sponsors .logos p img {
+    margin: 0 30px 30px 0;
+}
+#sponsors #party p img {
+    margin-left: 40px;
+}
+.sponsorship_opportunities {
+    clear: both;
+    margin: 20px 0 20px 100px;
+}
+
+
+/*======================================================
+=================== CALL FOR PAPERS ====================
+======================================================*/
+
+#cfp p .github_login {
+    margin: 20px 0 0 0;
+    display: block;
+}
+
+#cfp .entry {
+    clear: both;
+    padding: 10px 0 50px 0;
+}
+#cfp .entry p {
+    float: right;
+    width: 640px;
+}
+#cfp .entry .baloon_counter {
+    width: 90px;
+    height: 100%;
+    min-height: 160px;
+    background: url(../img/cfp_vote_baloon.png) no-repeat;
+    font-family: "RiotSquad", Impact, fantasy;
+    font-size: 40px;
+    color: #6b1806;
+    padding: 40px 0 0 2px;
+    text-align: center;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+#cfp .entry h4 {
+    font-family: "RiotSquad", Impact, fantasy;
+    font-size: 24px;
+    color: #d01e32;
+    line-height: 120%;
+    margin: 10px 0 0px 0;
+}
+#cfp h2 {
+    font-family: "RiotSquad", Impact, fantasy;
+    font-size: 28px;
+    line-height: 120%;
+    margin: 10px 0 0px 0;
+}
+#cfp .entry:first-child {
+    padding-top:0;
+}
+#cfp img {
+    margin-right: 15px;
+}
+#cfp .vote_buttons {
+    height: 59px;
+    font-size: 18px;
+    font-style: italic;
+    color: #D9DC9E;
+    float: right;
+    width: 640px;
+}
+#cfp .cancel {
+    font-size: 14px;
+}
+
+/*======================================================
+======================== TALKS =========================
+======================================================*/
+#talks {
+    width:720px;
+    margin: 0 0 30px 30px;
+}
+#talks .header {
+    width: 403px;
+    height: 67px;
+    background: url('../img/header.png') no-repeat;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+#talks .speaker {
+    width:220px;
+    height:241px;
+    padding:45px 0 0 8px;
+    background: url(../img/speakers_frame.png) no-repeat;
+    background-size: 220px auto;
+    text-align: center;
+    float:right;
+    margin: 0;
+}
+#talks .speaker img {
+    width: 160px;
+    height: 160px;
+}
+#talks .speaker h4 {
+    font-family: "Lato", Verdana, sans-serif;
+    font-size: 17px;
+    color: #172423;
+    font-weight: bold;
+    margin:2px 0px 0px 0px;
+    padding:0;
+}
+#talks .speaker span {
+    color: #d01e32;
+    font-family: "Lato", Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+#talks .talk {
+    width: 470px;
+    float: left;
+    margin:24px 0 30px 0;
+    text-align: left;
+
+}
+#talks .talk h3 {
+    color: #d01e32;
+    font-family: "RiotSquad", sans-serif;
+    margin: 0 0 10px 0;
+    line-height: 130%;
+}
+#talks .talk-box:nth-child(odd) .speaker {
+    float:left;
+    margin-right: 10px;
+}
+
+.venue img, .venue iframe {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.schedule .day {
+    font-size: 14px;
+    text-align: left;
+    height: 150px;
+    width:700px;
+}
+.schedule .day p {
+    float:left;
+    margin-top:20px;
+    width: 570px;
+}
+.schedule .day b {
+    font-size: 16px;
+}
+.schedule .day:last-child {
+    margin: 0;
+}
+.schedule .day img {
+    width:120px;
+    float: left;
+    margin-right: 10px;
+}
+
+/*=== AGENDA ====*/
+nav {
+
+}
+nav a {
+    background: #FCFDF1;
+    color: black;
+    padding:7px 20px;
+    margin-right: 10px;
+
+    border-bottom: 0px;
+    font-size:20px;
+    text-align: center;
+    line-height: 150%;
+    font-family: "RiotSquad", Impact, fantasy;
+    display: inline-block;
+
+}
+nav a.active {
+    background: #D9DC9E;
+}
+#agenda {
+    font-size: 17px;
+    margin: 0 0 60px 40px;
+}
+#agenda .item {
+    width: 710px;
+    padding: 15px 15px 15px 20px;
+    border-bottom: 2px dotted #D9DC9E;
+}
+#agenda .item .time {
+    width: 120px;
+    float: left;
+}
+#agenda .item .speaker {
+    width: 155px;
+    float: left;
+    padding-right: 5px;
+}
+#agenda .item .speaker a {
+    color: black;
+    font-weight: bold;
+}
+#agenda .multiline {
+    margin-top: -8px;
+}
+#agenda .item a:hover {
+    text-decoration: underline !important;
+}
+#agenda .description {
+    background: #F4ECDE;
+    padding: 20px 15px 20px 20px;
+}
+#agenda .featured {
+    background: #D9DC9E;
+}
+
+
+
+/*======================================================
+======================= MOBILE =========================
+======================================================*/
+
+@media screen and (max-width: 800px) {
+    body {
+        background-image: none;
+    }
+
+    .wrapper {
+        width: auto;
+        max-width: 600px;
+
+    }
+
+    .top_menu {
+        font-size: 18px;
+    }
+
+    .top_menu .wrapper {
+        width: auto;
+    }
+
+    .top_menu ul {
+        display: none;
+    }
+
+    .about, .location {
+        margin-top: 2em;
+    }
+
+    .about, .location, .newsletter {
+        margin-left: 0;
+        width: 100%;
+    }
+    .about .body, .location .body, .newsletter .body {
+        padding: 0 20px;
+    }
+
+    .about .header, .location .header, .newsletter .header {
+        width: 95%;
+    }
+
+    .about .footer {
+        width: auto;
+        margin-left: 20px;
+    }
+
+    .networks, .twitter {
+        display: none;
+    }
+
+    .box_container {
+        float: none;
+        width: auto;
+        max-width: 90%;
+        padding-left: 0;
+        margin: auto;
+    }
+
+    .newsletter {
+        margin-top: 0;
+        background: none;
+    }
+
+    .newsletter .body {
+        margin: auto;
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .newsletter .form {
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .newsletter .form .label {
+        width: 60px;
+    }
+
+    .newsletter .form input[type="text"],
+    .newsletter .form input[type="email"]
+    {
+        width: 100%;
+    }
+
+    .location .map {
+        margin-bottom: 1em;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+
+    img {
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.dsq-comment-count {
+    float: left;
+    margin-right: 15px;
+}
+.fb-like {
+    float: left;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .header {
+        font-size: 24px;
+    }
+}
+
+@media print {
+    .top_menu {display: none;}
+}
+

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+
+
+<head>
+<html lang="en-us">
+  <meta charset="UTF-8">
+  <title>DjangoCon | Presentation: AngularJS + Django = A Perfect Match</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  
+  <link href="../../../site_media/static/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
+  <link href="../../../site_media/static/markitup/skins/simple/style.css" type="text/css" media="screen" rel="stylesheet" />
+<link href="../../../site_media/static/markitup/sets/markdown/style.css" type="text/css" media="screen" rel="stylesheet" />
+
+  <link href="../../../site_media/static/css/main.css" rel="stylesheet">
+  <link href="../../../site_media/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+  
+  
+
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  
+
+  
+    <link href="https://2014.djangocon.us/site_media/static/img/favicon.ico" rel="shortcut icon" />
+    <script src="https://code.jquery.com/jquery-1.11.0.js"></script>
+    
+<script type="text/javascript" src="../../../site_media/static/markitup/ajax_csrf.js"></script>
+<script type="text/javascript" src="../../../site_media/static/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../../../site_media/static/markitup/sets/markdown/set.js"></script>
+
+    
+  
+</head>
+
+<body class="" id="">
+
+
+
+    
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../index.html">
+          <img width="114" height="" class="img-responsive" src="../../../site_media/static/images/logo.png"></a>
+          
+        </div>
+        <div class="navbar-collapse collapse">
+          
+            
+<ul class="nav navbar-nav">
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Schedule
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../call_for_proposals/index.html" >Call for Proposals</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../index.html" >Talks Schedule</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../tutorials/list/index.html" >Tutorials</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../lightning_talks_open_spaces/index.html" >Lightning Talks + Open Spaces</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sprints/index.html" >Sprints</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../night_outings/index.html" >Social Events</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                About
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../about/index.html" >What is Djangocon?</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../faq/index.html" >FAQ</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../code_of_conduct/index.html" >Code of Conduct</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../contact/index.html" >Contact Us</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Sponsors
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sponsors/index.html" >DjangoCon Sponsors</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sponsors/learn/index.html" >Learn about Sponsorships</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sponsors/apply/index.html" >Become A Sponsor</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Register
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../registration_info/index.html" >Registration Info</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="http://dcus14.eventbrite.com/" >Register</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Venue
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../hotels/index.html" >Hotels</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../travel/index.html" >Travel</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../blog/index.html" >
+                News
+                
+            </a>
+            
+        </li>
+    
+</ul>
+          
+          
+            
+
+
+
+<div class="" id="capsules">
+    <ul class="nav navbar-nav navbar-right">
+        
+            <li><a href="../../../account/login/index.html">Log in</a></li>
+            
+                <li><a href="../../../account/signup/index.html">Sign up</a></li>
+            
+        
+    </ul>
+</div>
+
+<form id="accountLogOutForm" style="display: none;" action="https://2014.djangocon.us/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='BmSYQ0cEXK6NzFmG7YU6hZ3HDGVC5mj0' />
+</form>
+
+          
+        </div>
+        <!--/.nav-collapse -->
+        
+      </div>
+    </div>
+    
+
+
+<div class="row small-header">
+    <div class="container">
+        <h1></h1>
+    </div>
+</div>
+
+
+<div class="wrapper topspace">
+
+    
+
+
+      
+       <div class="container">
+
+		
+	
+</div>
+
+
+          
+<div class="container">
+    
+        <h4>
+            Wednesday
+            11 a.m.&ndash;11:50 a.m.
+        </h4>
+    
+    <h2>AngularJS + Django = A Perfect Match</h2>
+
+    <h4>
+        
+            <a href="../../../speaker/profile/31/index.html">Nina Zakharenko</a>
+    </h4>
+
+    <dl class="dl-horizontal">
+        <dt><h3>Audience level:</h3></dt>
+        <dd style="margin-bottom: 0;">Experienced</dd>
+    </dl>
+
+    <h3>Description</h3>
+
+    <div class="description"><p>AngularJS is a powerful MVC framework that can easily integrate with Django templates. </p>
+<p>Let's walk through integrating the two for fantastic results.  The result is a fast, dynamic single page application.</p></div>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><h5>Integrating AngularJS with Django (45 min)</h5>
+<h5>Django Templates</h5>
+<ul>
+<li>I’ll be honest. Django templates are my least favorite part of the framework.</li>
+<li>Simple views and forms are easy, but as your app gets more complicated forms grow in complexity too.</li>
+<li>Ajax in template views is hard. jQuery is no longer the de-facto Javascript framework.</li>
+<li>But they still serve their purpose. By using a base Django template, we can use built-in session authentication by using the most basic View. (TemplateView to consume endpoints code example)</li>
+</ul>
+<h5>Why angular?</h5>
+<ul>
+<li>AngularJS provides scope binding - easier than fussing with jquery. (code sample)</li>
+<li>Plays nicely with REST frameworks. The angular $resource lets you interact with an endpoint as if it were an object. </li>
+<li>If you already have public endpoints, you can eat your own dog food instead of duplicating logic with a template.</li>
+<li>AngularJS is built with unit testing in mind - it’s easier than testing logic in Django templates. </li>
+<li>Custom validation is a breeze - no need to hit the server before giving user feedback</li>
+<li>But most importantly - single page apps rock. They’re fast and responsive, no need to wait for a whole page reload before displaying information.</li>
+</ul>
+<h5>Your REST Api</h5>
+<ul>
+<li>We’ll assume you already have a REST Api that you’d like to consume</li>
+<li>There are many options available for creating one, with my favorite being Django REST Api.</li>
+</ul>
+<h5>Configuration</h5>
+<ul>
+<li>If using session authentication between the API and your app, your TempateViews must have an ensure_csrf decorator if calling operations that modify, such as POST and PUT</li>
+<li>To enable angular in your application, link to the angular js file, create a minimal app.js, and add an app=”myApp” to any tag in your template.</li>
+<li>AngularJS configurations needed to work with Django CSRF</li>
+<li>angular and django templates share the same tags - {{ }}, need to configure angular to use something else. I prefer [[ ]]. Another option is to wrap all angular specific code in {% verbatim %} tags.</li>
+<li>To pass back CSRF cookies to django, you must configure the xsrf Cookie and Header name in your angular app settings. (Code example)</li>
+</ul>
+<h5>AngularJS scope binding in action (code example)</h5>
+<ul>
+<li>class conditionals</li>
+</ul>
+<h5>AngularJS resources  (code example)</h5>
+<ul>
+<li>ng-model
+Resources con’t.  (code example)</li>
+<li>filtering and sorting results</li>
+</ul>
+<h5>Angular Routing vs. Django Routing  (code example)</h5>
+<h5>Unit Testing AngularJS  (code example)</h5>
+<h5>Conclusion</h5>
+<ul>
+<li>Getting started can be tricky, and configuration may be difficult at first but the results pay off!</li>
+</ul></div>
+</div>
+
+
+
+
+      
+
+    
+</div><!--end of wrapper-->
+
+    
+
+    <div class="row" id="footer">
+      <div class="container">
+
+        <div class="col-md-6 col-centered">
+          <div class="contact-us">Questions? Comments?</div><a href="../../../contact/index.html">Contact Us</a><br>
+          Design + Build by
+              <a href="http://www.caktusgroup.com">Caktus Consulting Group, LLC</a> using <a href="http://eldarion.com/symposion/" title="Symposion — An Open Platform for Conference Websites">Symposion</a><br />
+              Hosted on <a href="https://gondor.io">Gondor</a>
+            <p>©2016 DjangoCon</p>
+          </div>
+       </div>
+    </div>
+    
+
+
+
+  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../../../site_media/static/js/vendor/bootstrap.min.js"></script>
+  
+  
+
+  
+    
+  
+</body>
+</html>
