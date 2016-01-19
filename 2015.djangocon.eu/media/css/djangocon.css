@@ -1,0 +1,286 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
+
+/* ----------------- HTML elements ----------------- */
+
+body    {
+    background: white;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.2;
+    color: #222;
+    }
+
+h1  {text-align: center;}
+h1, h2, h3, h4, h5, h6 {margin: 12px 0 0 0; color: #7f0000;}
+h1, h2 {text-transform: uppercase; font-weight: 300;}
+
+h1  {font-size: 200%; margin: 16px 0 50px;}
+h2  {font-size: 160%; margin-top: 16px;}
+h3  {font-size: 130%;}
+h4  {font-size: 112%;}
+h5  {font-size: 86%;}
+h6  {font-size: 75%;}
+
+em {color: #7f0000; font-weight: 400;}
+
+p {margin-bottom: 1em; line-height: 1.6; }
+
+pre {margin: 1em 0 1em 2em ;}
+
+a:link, a:visited {color: #7f0000;}
+
+/* ----------------- page layout components ----------------- */
+
+div#outer-wrapper {
+    padding: 0px 0 5px;
+    margin: 0 auto;
+    background: white;
+    width: 960px;
+}
+
+div#inner-wrapper {
+    padding: 135px 0 10px;
+    margin: 0;
+    background: #fff url("../djeu15-rev-small.gif") center 0 no-repeat;
+}
+
+div.footer {border-top: 1px solid black;}
+
+/* ----------------- variations ----------------- */
+
+/* for the minimal template, for very short pages */
+body.minimal div#pagetitle {display: none;}
+
+/* ----------------- arkestra built-in classes ----------------- */
+
+/* metadata for news, events, etc */
+.summary   {color: gray; size: 200%;}
+.date   {color: #666; font-weight: lighter; font-style: italic;}
+
+/* arkestra lists */
+ul.plugin-list li span.site-name    {
+    font-family: "gill sans", "gill sans mt", "Trebuchet MS", sans-serif;
+    font-variant: small-caps;
+    color: #666;
+}
+ul.personlist li {margin: .8em 0; list-style: none;}
+dl dt {margin-top: 0.8em;}
+
+ul.plugin-list li.grouper {font-weight: 300;}
+
+/* built-in classes for typogrify_tags */
+
+.amp {font-size: 105%; font-family: "Hoefler Text", "Didot", Georgia, serif;
+    font-style:italic; font-weight: 300;}
+
+/* ----------------- site navigation ----------------- */
+
+/* the whole thing */
+
+nav {margin-bottom: 50px; line-height: 1;}
+nav ul {padding: 0;}
+
+ul.menu	{
+    width: auto;
+	text-align: center;
+    z-index: 200;
+    position: relative;
+}
+
+ul.menu li	{
+	display: inline;
+	list-style-type: none;
+	padding-bottom: 0px;
+}
+
+ul.menu ul {
+    display: inline;
+}
+
+ul.menu ul li {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+ul.menu ul ul { /* 3rd level list - off by default */
+	position: absolute;
+    left: -9999em;
+    display: block;
+    padding: 20px 0 30px;
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+}
+
+ul.menu ul li.selected ul {left: 0;}
+ul.menu ul li.ancestor ul {left: 0;}
+
+ul.menu ul ul li {
+    display: inline;
+    background: white;
+    padding: 10px 5px 0 5px;
+    border-top: 1px solid gray;
+    letter-spacing: -0.05em;
+}
+
+ul.menu ul ul li a {background: white;}
+
+/* menu list anchors */
+li.menu_item a	{
+	text-decoration: none;
+	border: none;
+}
+
+li.menu_item a:hover {border-bottom: 2px solid #7f0000;}
+ul.menu ul ul li.menu_item a:hover {border-bottom: 1px solid #7f0000;}
+
+li li.menu_item a.children:after {content: " \25BE"}
+
+/* ------ the tab menu, as used for People and Places ------ */
+
+ul#tab-menu {
+	border-bottom: 1px solid #7f0000;
+	float:left;
+	width: 100%; /* width of entire menu */
+	margin: 0 0 .5em 0; /*margin underneath menu*/
+	padding: 0;
+}
+ul#tab-menu li {
+	float:left;
+	margin: 0 2px 0 0; /*gap between menu tabs*/
+	padding:0;
+	list-style: none;
+    border-top: 1px solid #7f0000;
+    border-left: 1px solid #7f0000;
+    border-right: 1px solid #7f0000;
+}
+
+ul#tab-menu a {
+	display:block;
+	padding: 0.1em 1.2em; /*padding within tab*/
+	text-decoration:none;
+}
+
+ul#tab-menu .active span {
+    background: #7f0000;
+	color:#fff;
+	display:block;
+	padding: 0.1em 1.2em;
+    }
+
+/* ----------------- lists ----------------- */
+ul   {list-style: square inside; margin: .25em 0 1em;}
+ul li  {line-height: 1.5;}
+
+/* ----------------- misc ----------------- */
+
+.accessibility {text-indent: 100%; white-space: nowrap; overflow: hidden;}
+
+/* ----------------- semantic presentation editor ----------------- */
+
+p.standout, div.row.standout, p.subtitle {
+    font-family:"Hoefler Text", "Didot", Georgia, serif;
+    font-size:120%;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #7f0000;
+    padding: 1em 2em;
+    margin: 1em 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+p.standout-mild, div.row.standout-mild {
+    font-family:"Hoefler Text", "Didot", Georgia, serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #7f0000;
+    padding: 0em 2em;
+    margin: 1em 0;
+}
+
+p.subtitle.place {border: none;}
+
+.border-top {padding: 1em 0 0; margin: 1em 0; border-top: 1px solid gray;}
+.buttonise a:link, .buttonise a:visited {
+    background: #7f0000; color: white; border: 1px solid #7f0000;
+    border-radius: 3px;
+    text-decoration: none; padding: 0 2px;
+    text-transform: uppercase; font-weight: 300;
+}
+
+.buttonise a:link:hover, .buttonise a:visited:hover {
+    background: white; color: #7f0000;
+}
+p.centre, h2.centre {text-align: center;}
+
+.no-titles .imageset .image .image-title.text {
+    /* 120% indent is a hurried hack here for Firefox because otherwise the text becomes
+    invisible in the padding */
+    text-indent: 120%; white-space: nowrap; overflow: hidden;
+    }
+
+.no-titles .imageset a:link:hover {
+    border-radius: 2px;
+    box-shadow: 0px 0px 6px 1px #ccc;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+
+/* ----------------- tables ----------------- */
+
+table {width: 100%;}
+table th {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px;
+    text-align: right;
+    color: #7f0000;
+}
+table td {text-align: center; padding: 10px;}
+table tr {border-top: 1px solid gray;}
+table tr:first-child {border-top: none;}
+table tr:first-child th {text-align: center;}
+
+/* ----------------- images ----------------- */
+
+/* the image-title is generally superimposed on it */
+.imageset .image-title {
+    text-transform:uppercase;
+    text-align: right;
+    font-size: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2px 10px;
+    color: black;
+    background: rgba(255,255,255,.7);
+    }
+
+.imageset .image-caption {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 90%;
+    text-align: right;
+    padding-bottom: 5px;
+    }
+
+.no-image-link-arrows .imageset a:link .link-arrow {background: none;}
+
+
+/* --------- specific objects ----------- */
+
+.anythingBase ul#slider206 .panel {height: 280px;}
+
+/* ----------------- @media overrides for particular cases ----------------- */
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    div#inner-wrapper   {
+        background: #fff url("../djeu15-rev-large.gif") center 0px no-repeat;
+        background-size: 100%;
+    }
+}

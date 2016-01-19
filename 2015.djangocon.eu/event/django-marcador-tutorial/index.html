@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    
+	<meta name="description" content="A hands-on Django tutorial aimed at programmers who already have some Python experience."/>
+
+
+
+	<title>Open day events: django-marcador tutorial</title>
+
+
+
+
+
+    <link rel="icon" type="image/png" href="../../media/favicon.png">
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_lists.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_images.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_layout.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_presentation_editor.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/temporaryhacks.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/carousel.css" />
+
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+<!--[if lte IE 8]><link href="/static/arkestra/css/ie-fixes/ie-lte-8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if lte IE 7]><link href="/static/arkestra/css/ie-fixes/ie-lte-7.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if lte IE 6]><link href="/static/arkestra/css/ie-fixes/ie-lte-6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/djangocon.css" />
+
+
+
+
+
+
+</head>
+
+<body >
+    
+    
+    	
+    <p class="accessibility">DjangoCon Europe, 2nd to 7th June 2015, in Cardiff, Wales.
+        6 days of talks, tutorials and code.</p>
+    
+        
+    		<div id="outer-wrapper">
+				
+    			<div id="inner-wrapper">
+    				<nav><ul class= "menu">
+
+
+
+
+
+<li class="menu_item selected">
+    <a href="../../index.html" class=" children">
+        Home</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../open-day/index.html" class="">
+        Open day</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../talks/index.html" class="">
+        Talks</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../code/index.html" class=" children">
+        Code</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../code/sprint/index.html" class="">
+        What on earth is a code sprint?</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/index.html" class=" children">
+        Must-read information</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../welcome/getting-here/index.html" class="">
+        Getting here</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/advice/index.html" class="">
+        Advice</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/accommodation/index.html" class="">
+        Accommodation</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/venues/index.html" class="">
+        Venues</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/dining/index.html" class="">
+        Dining</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/eat/index.html" class="">
+        Where else to eat</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/diversity/index.html" class="">
+        Diversity</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/accessibility/index.html" class="">
+        Accessibility</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/social-responsibility/index.html" class="">
+        Social responsibility</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/creche/index.html" class="">
+        Crèche</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/speakers/index.html" class="">
+        Speakers</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../tickets/index.html" class="">
+        Tickets</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../code-conduct/index.html" class="">
+        Code of conduct</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/index.html" class=" children">
+        Our sponsors</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../sponsors/sponsorship/index.html" class="">
+        Sponsorship</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/sponsorship-terms/index.html" class="">
+        Terms</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/practical-information/index.html" class="">
+        Practical information for sponsors</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../news-and-events/index.html" class="">
+        News <span class="amp">&amp;</span> events</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../contact/index.html" class="">
+        Contact</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+
+</ul></nav>
+
+        			<div id="main-page-body">
+        				
+    
+        
+        	<div id="pagetitle">
+                <h1>django-marcador tutorial</h1>
+            </div>
+        
+
+        
+        	<p class="subtitle">A hands-on Django tutorial aimed at programmers who already have some Python experience.</p>
+        
+
+        
+    	    
+            <div class="row columns3">
+            	<div class="column firstcolumn doublecolumn">
+    				
+    				    
+
+  
+    <p>
+      <em>Note: this session is part of DjangoCon Europe’s open day. It’s free and all are welcome to attend, but <a href="../../open-day/index.html">please register because places are limited</a>.</em>
+    </p>
+    <h2>About the workshop</h2>
+    <p>With every step of the tutorial you will learn Django&#8217;s basic principles by creating a bookmark application similar to Delicious or Pinboard. This is why the tutorial is named django-marcador: marcador means bookmark in Spanish.</p>
+    <p>If you have <em>basic knowledge</em> in the following areas it will be a lot easier to follow the tutorial:</p>
+    <ul>
+      <li>object-oriented programming (using Python)</li>      <li><span class="caps">HTTP</span> Request/Response model</li>      <li><span class="caps">HTML</span> and <span class="caps">CSS</span></li>      <li><span class="caps">SQL</span> and relational databases</li>    </ul>
+    <p>A lot of people have made their first steps with Django using the django-marcador tutorial - you can be the next!</p>
+    <h2>About Markus Zapke Gründemann </h2>
+    <div class="row columns2">
+      <div class="column firstcolumn">
+        <div>
+          <div class="div">
+            <span class="imageset image "><a  style="width: 301px; min-height: 301px;"><img alt="" class="plugin" src="../../media/filer_public_thumbnails/filer_public/2015/02/11/03_1.jpg__301x301_q95_crop_subject_location-979,437.jpg" /></a></span> 
+          </div>
+        </div>
+      </div>
+      <div class="column lastcolumn">
+        <div>
+          <p>Markus Zapke Gründemann has over 14 years of experience in software development and has worked for more than seven years as self-employed software developer, consultant and trainer. </p>
+          <p>His primary focus is on developing web applications with Django. He attaches particular importance to testing and documentation, is an avid user of automation technologies and a regular contributor to Open Source projects.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <div>
+          <p>He is the owner of <a href="http://www.transcode.de">transcode</a>, a company offering Python, Django and Ember.js software development as well as professional Django training. He is a board member of the <a href="http://www.django-de.org">German Django Association</a>, actively supports <a href="http://djangogirls.org">Django Girls</a> and is one of the leads of the <a href="http://codefor.de/leipzig/">Open Knowledge Lab Leipzig</a>.</p>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    				
+                </div>
+    			<div class="column lastcolumn sidebar">
+    				
+    				
+    				
+
+<div class = "">
+	<dl class="not-indented">
+		
+		
+	
+		<dt>Date <span class="amp">&amp;</span> time</dt>
+		<dd>31st May 2015, 14.00&#8209;18.00</dd>
+	
+	    
+	    
+	    
+	    
+	    
+	    
+ 				    <dt>Location</dt>
+ 				    <dd>Wallace lecture theatre 0.13</dd>
+	    
+	    
+	</dl>
+</div>
+    				
+    				    
+
+    <h2>External links</h2>
+    <ul class="object-links">
+    	
+    		<li class="plugin-list-item">
+
+<a href="http://django-marcador.keimlink.de" class="title">django-marcador tutorial</a>
+
+
+
+
+    <span class="link-description">Learn Django’s basic principles by creating a bookmark application with this popular and well-respected tutorial.</span>
+</li>
+    	
+    </ul>
+
+    <h2>Related news</h2>
+    <ul class="object-links">
+    	
+    		<li class="plugin-list-item">
+
+    
+		
+            
+        		<a class="title" href="../../news/transcode/index.html">Transcode, our Silver sponsor</a>
+            
+        
+    
+
+    
+    	
+    
+
+    
+    	
+
+            
+                
+                    <span class="date">11th March 2015</span>
+                
+            
+
+            
+                
+                    <span class="summary">Transcode are active in the Django community and a busy Python web agency.</span>
+                
+            
+    	
+    
+
+</li>
+    	
+    </ul>
+
+
+    		        
+    				
+
+
+    			</div>
+    		</div>
+    		<ul class = "news icons">
+    			<li><a href = "../../news-and-events/index.html">More DjangoCon Europe 2015 events</a></li>
+    		</ul>
+        
+    
+
+        			</div>
+
+    			</div>
+				
+					
+				
+    		</div>
+    	
+    
+
+    
+</body>
+
+</html>

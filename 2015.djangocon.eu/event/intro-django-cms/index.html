@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    
+	<meta name="description" content="A hands-on introduction to Django&#39;s most popular web content management system, the open-source django CMS."/>
+
+
+
+	<title>Open day events: Getting started with django CMS</title>
+
+
+
+
+
+    <link rel="icon" type="image/png" href="../../media/favicon.png">
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_lists.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_images.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_layout.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_presentation_editor.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/temporaryhacks.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/carousel.css" />
+
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+<!--[if lte IE 8]><link href="/static/arkestra/css/ie-fixes/ie-lte-8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if lte IE 7]><link href="/static/arkestra/css/ie-fixes/ie-lte-7.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if lte IE 6]><link href="/static/arkestra/css/ie-fixes/ie-lte-6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/djangocon.css" />
+
+
+
+
+
+
+</head>
+
+<body >
+    
+    
+    	
+    <p class="accessibility">DjangoCon Europe, 2nd to 7th June 2015, in Cardiff, Wales.
+        6 days of talks, tutorials and code.</p>
+    
+        
+    		<div id="outer-wrapper">
+				
+    			<div id="inner-wrapper">
+    				<nav><ul class= "menu">
+
+
+
+
+
+<li class="menu_item selected">
+    <a href="../../index.html" class=" children">
+        Home</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../open-day/index.html" class="">
+        Open day</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../talks/index.html" class="">
+        Talks</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../code/index.html" class=" children">
+        Code</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../code/sprint/index.html" class="">
+        What on earth is a code sprint?</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/index.html" class=" children">
+        Must-read information</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../welcome/getting-here/index.html" class="">
+        Getting here</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/advice/index.html" class="">
+        Advice</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/accommodation/index.html" class="">
+        Accommodation</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/venues/index.html" class="">
+        Venues</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/dining/index.html" class="">
+        Dining</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/eat/index.html" class="">
+        Where else to eat</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/diversity/index.html" class="">
+        Diversity</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/accessibility/index.html" class="">
+        Accessibility</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/social-responsibility/index.html" class="">
+        Social responsibility</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/creche/index.html" class="">
+        Crèche</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/speakers/index.html" class="">
+        Speakers</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../tickets/index.html" class="">
+        Tickets</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../code-conduct/index.html" class="">
+        Code of conduct</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/index.html" class=" children">
+        Our sponsors</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../sponsors/sponsorship/index.html" class="">
+        Sponsorship</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/sponsorship-terms/index.html" class="">
+        Terms</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/practical-information/index.html" class="">
+        Practical information for sponsors</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../news-and-events/index.html" class="">
+        News <span class="amp">&amp;</span> events</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../contact/index.html" class="">
+        Contact</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+
+</ul></nav>
+
+        			<div id="main-page-body">
+        				
+    
+        
+        	<div id="pagetitle">
+                <h1>Getting started with django CMS</h1>
+            </div>
+        
+
+        
+        	<p class="subtitle">A hands-on introduction to Django&#39;s most popular web content management system, the open-source django <span class="caps">CMS</span>.</p>
+        
+
+        
+    	    
+            <div class="row columns3">
+            	<div class="column firstcolumn doublecolumn">
+    				
+    				    
+
+  
+    <p>
+      <em>Note: this session is part of DjangoCon Europe’s open day. It’s free and all are welcome to attend, but <a href="../../open-day/index.html">please register because places are limited</a>.</em>
+    </p>
+    <p>
+      <a href="http://django-cms.org">django <span class="caps"><span class="caps">CMS</span></span></a> is one of the most popular and successful Django projects of all, used in thousands of installations around the world - including this very website - and supported by an active community of hundreds of developers.</p>
+    <p>It&#8217;s flexible and extensible enough to power huge websites for the likes of Orange, Mercedes Benz, and <span class="caps">PBS</span>, but also so straightforward to deploy that you can be up and running in minutes.</p>
+    <h2>About this workshop</h2>
+    <p>This tutorial introduces django <span class="caps">CMS</span>, working from its installation to more advanced topics such as the creation of plugins and integration with other applications.</p>
+    <p>Some basic familiarity with Python and Django is useful to get the most from this tutorial, but you’ll be able to get a lot out of it and make a useful start even if you’re very new to Python/Django development.</p>
+    <p>If you&#8217;re already a django <span class="caps">CMS</span> user, you&#8217;ll find out more about the latest developments in the system, and no doubt some new tips, tricks and techniques.</p>
+    <p>This workshop will be followed by <a href="../advanced-django-cms/index.html">a longer and more advanced session on the 4th June</a>.</p>
+    <h2>About Stefan Foulis</h2>
+    <div class="row columns2">
+      <div class="column firstcolumn">
+        <div>
+          <div class="div">
+            <span class="imageset image "><a  style="width: 301px; min-height: 301px;"><img alt="" class="plugin" src="../../media/filer_public_thumbnails/filer_public/2015/04/17/stefan_foulis.png__301x301_q95_crop_subject_location-353,219.png" /></a></span> 
+          </div>
+        </div>
+      </div>
+      <div class="column lastcolumn">
+        <div>
+          <p>Stefan Foulis is a Python developer with many years of Django experience. He works at Divio, which has backed django <span class="caps">CMS</span> since its infancy, helping it become an open-source success story. </p>
+          <p>Stefan is a core developer of django <span class="caps">CMS</span>; he has made substantial contributions to the project and worked on countless django <span class="caps">CMS</span> websites. He&#8217;s also the lead developer of Aldryn, a cloud-based hosting/development platform for django <span class="caps">CMS</span>.</p>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    				
+                </div>
+    			<div class="column lastcolumn sidebar">
+    				
+    				
+    				
+
+<div class = "">
+	<dl class="not-indented">
+		
+		
+	
+		<dt>Date <span class="amp">&amp;</span> time</dt>
+		<dd>31st May 2015, 13.00&#8209;15.00</dd>
+	
+	    
+	    
+	    
+	    
+	    
+	    
+ 				    <dt>Location</dt>
+ 				    <dd>Beverton lecture theatre 1.40</dd>
+	    
+	    
+	</dl>
+</div>
+    				
+    				    
+
+    <h2>External links</h2>
+    <ul class="object-links">
+    	
+    		<li class="plugin-list-item">
+
+<a href="http://django-cms.org" class="title">django CMS</a>
+
+
+
+
+    <span class="link-description">The easy-to-use and developer-friendly CMS</span>
+</li>
+    	
+    		<li class="plugin-list-item">
+
+<a href="https://github.com/stefanfoulis" class="title">Stefan Foulis on GitHub</a>
+
+
+
+</li>
+    	
+    		<li class="plugin-list-item">
+
+<a href="http://aldryn.com" class="title">Aldryn</a>
+
+
+
+
+    <span class="link-description">Build and run django CMS and custom applications in the cloud.</span>
+</li>
+    	
+    		<li class="plugin-list-item">
+
+<a href="http://divio.ch" class="title">Divio</a>
+
+
+
+
+    <span class="link-description">Makers of the finest Swiss Django applications</span>
+</li>
+    	
+    </ul>
+
+
+    		        
+    				
+
+
+    			</div>
+    		</div>
+    		<ul class = "news icons">
+    			<li><a href = "../../news-and-events/index.html">More DjangoCon Europe 2015 events</a></li>
+    		</ul>
+        
+    
+
+        			</div>
+
+    			</div>
+				
+					
+				
+    		</div>
+    	
+    
+
+    
+</body>
+
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    
+    	
+    		
+    			<meta name="description" content="Map for Chapter Arts Centre" />
+    		
+    	
+    
+
+
+	<title>Chapter Arts Centre - map</title>
+
+
+
+
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCirrJ-Sd-iNszBUNf1yU2aR1DkcF8ojuw&amp;sensor=false"></script>
+<script type="text/javascript" src="../../static/arkestra/js/maps/markerwithlabel.js"></script>
+<script type="text/javascript">
+	var infowindow = null;
+
+	function initialize() {
+		var latlng = new google.maps.LatLng(51.483020, -3.203770);
+
+    var myOptions = {
+        panControl: false,
+        zoom: 17,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scaleControl: true,
+        scaleControlOptions: {
+            position: google.maps.ControlPosition.BOTTOM_RIGHT
+        }
+    }
+
+	    var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+
+		var placeMarker = setMarkers(map);
+
+        infowindow = new google.maps.InfoWindow({maxWidth: 300})
+
+    }
+
+	function setMarkers(map, latlngbounds) {
+
+	    var pMarker = null;
+
+	    var latlngbounds = new google.maps.LatLngBounds( );
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.485110, -3.178530);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Cardiff City Hall",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../cardiff-city-hall/index.html">Cardiff City Hall</a></h2>The main venue for conference talks, Monday 1st to Wednesday 3rd.');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.487660, -3.179040);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Cardiff University Main Building",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../cardiff-university-main-building/index.html">Cardiff University Main Building</a></h2>Venue for the open day talks and workshops, Sunday 31 May');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.476000, -3.179120);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Cardiff Central railway station",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../cardiff-central-train-station/index.html">Cardiff Central railway station</a></h2>Cardiff&#39;s main rail station, 15 minutes&#39; walk from the conference venue');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.479700, -3.170700);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Ibis Hotel Cardiff",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../ibis-hotel-cardiff/index.html">Ibis Hotel Cardiff</a></h2>A budget hotel, about 10 minutes&#39; walk from City Hall');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.489000, -3.183880);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Aberdare Hall",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../aberdare-hall/index.html">Aberdare Hall</a></h2>Lunch venue, Sunday, Thursday and Friday');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.483330, -3.177180);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Park Plaza Cardiff",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../park-plaza-cardiff/index.html">Park Plaza Cardiff</a></h2>A smart hotel just five minutes&#39; walk from City Hall.');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.486160, -3.181880);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Cardiff University Bute Building",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../cardiff-university-bute-building/index.html">Cardiff University Bute Building</a></h2>Venue for sprints and workshops, Thursday 4th &amp; Friday 5th June');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.481960, -3.168670);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "The Clink, HMP Cardiff",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../the-clink-hmp-cardiff/index.html">The Clink, HMP Cardiff</a></h2>A dining experience delivering change');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.483020, -3.203770);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    	            animation: google.maps.Animation.DROP,
+	    	            icon: '//maps.google.com/mapfiles/ms/micons/blue-dot.png',
+	    	            zIndex: 10000,
+	    				labelClass: "labels main-label", // the CSS class for the label
+		            
+					labelContent: "Chapter Arts Centre",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2>Chapter Arts Centre</h2>Venue for our Thursday night party');
+		            infowindow.open(map, this);
+		        });
+
+				
+				    pMarker = marker;
+		        
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.471330, -3.183960);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Vegetarian Food Studio",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../vegetarian-food-studio/index.html">Vegetarian Food Studio</a></h2>Cardiff&#39;s favourite vegetarian restaurant');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.476180, -3.177300);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Sleeperz Hotel",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../sleeperz-hotel/index.html">Sleeperz Hotel</a></h2>A comfortable budget hotel, a minute&#39;s walk from the station and 15 minutes&#39; walk from City Hall.');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.476150, -3.176700);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Maldron Hotel",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../maldron-hotel/index.html">Maldron Hotel</a></h2>A comfortable hotel very close to the station, and about 15 minutes&#39; walk from City Hall');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.478180, -3.178110);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Royal Hotel",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../royal-hotel/index.html">Royal Hotel</a></h2>A perfectly-placed hotel, mid-way between City Hall (about 10 minutes&#39; walk) and Cardiff Central Railway station');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+			
+
+				var siteLatLng = new google.maps.LatLng(51.476750, -3.179420);
+
+		        latlngbounds.extend(siteLatLng);
+
+			    var marker = new MarkerWithLabel({
+		       		position: siteLatLng,
+		       		map: map,
+		            
+	    				labelClass: "labels", // the CSS class for the label
+		            
+					labelContent: "Cardiff Central bus station",
+					labelAnchor: new google.maps.Point(-15, 30),
+					labelStyle: {opacity: 0.85}
+		   		});
+
+
+			    google.maps.event.addListener(marker, "click", function () {
+				    infowindow.setContent('<h2><a href="../cardiff-central-bus-station/index.html">Cardiff Central bus station</a></h2>Main bus terminus. 15 minutes&#39; walk from the conference venue.');
+		            infowindow.open(map, this);
+		        });
+
+				
+
+		    
+
+		
+
+		
+			map.fitBounds( latlngbounds );
+		
+
+	    return pMarker;
+	    }
+</script>
+
+
+
+
+    <link rel="icon" type="image/png" href="../../media/favicon.png">
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_lists.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_images.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_layout.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/arkestra_presentation_editor.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/temporaryhacks.css" />
+<link rel="stylesheet" type="text/css" href="../../static/arkestra/css/carousel.css" />
+
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+<!--[if lte IE 8]><link href="/static/arkestra/css/ie-fixes/ie-lte-8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if lte IE 7]><link href="/static/arkestra/css/ie-fixes/ie-lte-7.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if lte IE 6]><link href="/static/arkestra/css/ie-fixes/ie-lte-6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+
+
+
+<link href="../../static/arkestra/css/arkestra_maps.css" rel="stylesheet" type="text/css" />
+
+
+
+    <link rel="stylesheet" type="text/css" href="../../media/css/djangocon.css" />
+
+
+
+
+
+
+</head>
+
+<body onload="initialize()">
+    
+    
+    	
+    <p class="accessibility">DjangoCon Europe, 2nd to 7th June 2015, in Cardiff, Wales.
+        6 days of talks, tutorials and code.</p>
+    
+        
+    		<div id="outer-wrapper">
+				
+    			<div id="inner-wrapper">
+    				<nav><ul class= "menu">
+
+
+
+
+
+<li class="menu_item selected">
+    <a href="../../index.html" class=" children">
+        Home</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../open-day/index.html" class="">
+        Open day</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../talks/index.html" class="">
+        Talks</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../code/index.html" class=" children">
+        Code</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../code/sprint/index.html" class="">
+        What on earth is a code sprint?</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/index.html" class=" children">
+        Must-read information</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../welcome/getting-here/index.html" class="">
+        Getting here</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/advice/index.html" class="">
+        Advice</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/accommodation/index.html" class="">
+        Accommodation</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/venues/index.html" class="">
+        Venues</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/dining/index.html" class="">
+        Dining</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/eat/index.html" class="">
+        Where else to eat</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/diversity/index.html" class="">
+        Diversity</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/accessibility/index.html" class="">
+        Accessibility</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/social-responsibility/index.html" class="">
+        Social responsibility</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/creche/index.html" class="">
+        Crèche</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../welcome/speakers/index.html" class="">
+        Speakers</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../tickets/index.html" class="">
+        Tickets</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../code-conduct/index.html" class="">
+        Code of conduct</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/index.html" class=" children">
+        Our sponsors</a>
+        
+            <ul>
+
+
+
+
+
+<li class="menu_item ">
+    <a href="../../sponsors/sponsorship/index.html" class="">
+        Sponsorship</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/sponsorship-terms/index.html" class="">
+        Terms</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../sponsors/practical-information/index.html" class="">
+        Practical information for sponsors</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../news-and-events/index.html" class="">
+        News <span class="amp">&amp;</span> events</a>
+        
+        </li>
+    
+<li class="menu_item ">
+    <a href="../../contact/index.html" class="">
+        Contact</a>
+        
+        </li>
+    
+
+</ul>
+        
+        </li>
+    
+
+</ul></nav>
+
+        			<div id="main-page-body">
+        				
+    
+	<div id="pagetitle">
+        <h1 class="name">Chapter Arts Centre</h1>
+    </div>
+
+    
+    <ul id="tab-menu">
+    	
+    		
+    			<li> 
+    				<a href="index.html">About</a>
+    			</li>            
+    		        
+    	
+    		
+    			<li class="active"> 
+    				<span>Map</span>
+    			</li>
+    		        
+    	
+    </ul>
+
+
+    
+	<div id="map-canvas"></div>
+
+
+        			</div>
+
+    			</div>
+				
+					
+				
+    		</div>
+    	
+    
+
+    
+</body>
+
+</html>
