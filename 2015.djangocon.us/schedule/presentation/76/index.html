@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentation: REST Easy — API Security Done Right | DjangoCon in Austin, TX</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  
+  <meta property="og:title" content="DjangoCon US 2015 in Austin, TX" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://2015.djangocon.us/" />
+  <meta property="og:site_name" content="DjangoCon US 2015" />
+  <meta property="og:description" content="A six-day not-for-profit by-the-community and for-the-community international conference for the Django web framework. " />
+  <meta property="og:image" content="//djangocon-us.global.ssl.fastly.net/site_media/static/images/djangocon-logo-thumb.70106cfea512.png" />
+  
+
+  
+  <link href="http://djangocon-us.global.ssl.fastly.net/site_media/static/main.e092124d7e42.css" rel="stylesheet" type="text/css" media="screen,projection" />
+  
+  
+
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  
+
+  
+    <link href="http://djangocon-us.global.ssl.fastly.net/site_media/static/images/favicon.338abbb5ea8d.ico" rel="shortcut icon" />
+    <script src="http://cdn.jsdelivr.net/jquery/1.11.2/jquery.min.js"></script>
+    
+  
+</head>
+
+<body class="" id="">
+<div class="poster-bg">
+
+  <div class="poster-shadow">
+    <div class="django-sticker"></div>
+
+    
+    <!-- Fixed navbar -->
+    <div class="navbar-wrapper">
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../../../proposals/submit/index.html">
+            <img width="180" class="img-responsive" src="http://djangocon-us.global.ssl.fastly.net/site_media/static/images/logo.f56b5ae9efee.png" alt="logo">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          
+            
+<ul class="nav navbar-nav">
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                About
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../about/index.html" >What is Djangocon?</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../organizers/index.html" >DjangoCon Organizers</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../code_of_conduct/index.html" >Code of Conduct</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../diversity/index.html" >Diversity</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../accessibility/index.html" >Accessibility</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../financial_aid.1.html" >Financial Aid</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="http://2015.djangocon.us/schedule/presentation/76/childcare/" >Childcare</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../volunteers/index.html" >Volunteers</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../contact.1.html" >Contact Us</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Schedule
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../tutorials/list/index.html" >Tutorial Schedule</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../general-sessions/index.html" >Talk Schedule</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sprints/index.html" >Sprints</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://djangogirls.org/djangoconus/" >DjangoGirls Austin Workshop</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../beginners/index.html" >Beginner&#39;s Guide</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Registration
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../registration/index.html" >Register for DjangoCon US</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://djangogirls.org/djangoconus/apply/" >Register for DjangoGirls Austin Workshop</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="https://resweb.passkey.com/go/DJANGO0915" >Register for Hotel Accommodations</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Venue
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../hotels/index.html" >Hotel Accommodations</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../travel/index.html" >Travel</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../austin/index.html" >City Guide to Austin</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Speaking
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../speaking/cfp/index.html" >Call For Proposals</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../speaking/mentors/index.html" >Speaker Mentors</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../lightning_talks/index.html" >Lightning Talks</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class="dropdown ">
+            <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                Sponsors
+                <b class="caret"></b>
+            </a>
+            
+                
+<ul class="dropdown-menu" role="menu">
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../become-sponsor/index.html" >Become a Sponsor</a>
+        </li>
+    
+        <li role="presentation" >
+            <a role="menuitem" href="../../../sponsors/index.html" >DjangoCon Sponsors</a>
+        </li>
+    
+</ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="../../../blog/index.html" >
+                News
+                
+            </a>
+            
+        </li>
+    
+</ul>
+          
+          
+            
+              
+
+
+
+<div class="" id="capsules">
+    <ul class="nav navbar-nav navbar-right">
+        
+            <li><a href="../../../account/login/index.html">Log in</a></li>
+            
+                <li><a href="../../../account/signup/index.html">Sign up</a></li>
+            
+        
+    </ul>
+</div>
+
+<form id="accountLogOutForm" style="display: none;" action="http://2015.djangocon.us/account/logout/" method="POST">
+    <input type='hidden' name='csrfmiddlewaretoken' value='iYULVQqXzA1Y8odJs8AWgBm1Gh9cCGUH' />
+</form>
+
+            
+          
+        </div>
+        <!--/.nav-collapse -->
+        
+      </div>
+    </div>
+    </div>
+    
+
+
+    <div class="row small-header">
+      <div class="container">
+        <h1 class="brdp"></h1>
+      </div>
+    </div>
+
+
+    
+      
+       <div class="row base-row">
+  <div class="container">
+		
+  </div>
+</div>
+          
+<div class="row base-row">
+<div class="page-content container">
+    
+        <h4>
+            Monday
+            10:30 a.m.&ndash;10:55 a.m.
+        </h4>
+    
+    <h2>REST Easy — API Security Done Right</h2>
+
+    <h4>
+        
+            <a href="../../../speaker/profile/82/index.html">Jeff Schenck</a>
+    </h4>
+
+    <dl class="dl-horizontal">
+        <dt><h3>Audience level:</h3></dt>
+        <dd style="margin-bottom: 0;">Intermediate</dd>
+    </dl>
+
+    <h3>Description</h3>
+
+    <div class="description"><p>As frontend web frameworks like AngularJS and Backbone.js become more common, running a REST API using Django and Django REST Framework is becoming unavoidable, and security is absolutely critical. I'll show you the tools we're working with and how to wrangle them. I'll also talk about where we need to take these tools to make the world safe for Django and frontend frameworks. </p></div>
+
+    <h3>Abstract</h3>
+
+    <div class="abstract"><h1>Why REST</h1>
+<p>More and more of our web development is shifting to frontend web frameworks like Angular, Ember, and Backbone. And this is great! These frameworks can provide an amazing, responsive, beautiful experience to our users — and the only price we pay is having to write JavaScript. Well, having to write JavaScript and having to maintain a seriously robust, battle-hardened API for the frontend framework to talk to.</p>
+<h1>State of REST</h1>
+<p>Django REST Framework has clearly broken away with a ton of momentum, and with good reason. It's a solid framework, and the tools it provides right out of the box — serialization, validation, nested relationships — are splendid. It even provides basic authentication and authorization baked right in, which works great in the very simple cases.</p>
+<p>However, when you start encountering slightly more complicated API permission setups, things start to get messy.</p>
+<h1>REST Security</h1>
+<p>There's a big tectonic shift when trading in your traditional request-response-Django site for a frontend-framework-API-Django site. Your application logic used to reside almost entirely server-side, but now it's split — half server-side, half browser-side. And the trick with browser-side code is it runs in a completely untrusted environment. So we're faced with a much more complicated security situation to batten down.</p>
+<p>You need different authentication strategies: session auth, JWT token auth, API keys, signed URLs, and combinations thereof. You have different permission strategies: table-level, row-level, column-level, and combinations thereof. It gets real complicated.</p>
+<h1>REST Easy</h1>
+<p>I'll show how to use the tools at our disposal — Django groups and permissions, REST Frameworks's permission classes, third-party libraries — to cobble together a passable security setup for your API. You'll get plenty of code samples, detailing the kinds of setups we put together for our site and the custom tooling we built to do it.</p>
+<h1>Next-Level REST</h1>
+<p>We'll end by talking about how our tools can serve us better in the future. If Django is going to have a strong place in the future of the web, we need strong tooling for building APIs. This is how we'll get there.</p></div>
+</div>
+</div>
+
+      
+    
+
+    
+
+    <div class="row" id="footer">
+      <div class="mainback">
+        <div class="turm">
+          <div class="outer">
+            <div class="inner">
+              <div class="container">
+                <div class="nail nail-bl"></div>
+                <div class="nail nail-br"></div>
+                <div class="col-md-6 col-centered footer-note">
+                  <div class="contact-us">Questions? Comments?</div><a href="../../../contact.1.html">Contact Us</a><br>
+                  Design + Build by
+                      <a href="https://www.lincolnloop.com">Lincoln Loop</a> <br />
+                      Hosted on <a href="https://gondor.io">Gondor</a> <br />
+                      Presented by <a href="http://defna.org">DEFNA</a>
+                    <p>©2016 DjangoCon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+  </div>
+</div>
+  
+  <script type="text/javascript" src="http://djangocon-us.global.ssl.fastly.net/site_media/static/main.1378cf10e2eb.js" charset="utf-8"></script>
+  
+  
+
+  
+    
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-330386-12']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    // _gaq.push(['_setCustomVar', 1, 'Authentication Type', ut, 2]);
+    
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html>
