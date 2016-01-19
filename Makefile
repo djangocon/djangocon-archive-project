@@ -20,68 +20,68 @@ help:
 
 2015-eu:
 	wget \
-     --recursive \
-     --no-clobber \
-     --no-check-certificate \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains 2015.djangocon.eu \
-     --no-parent \
-     https://2015.djangocon.eu
+		--convert-links \
+		--html-extension \
+		--no-check-certificate \
+		--no-clobber \
+		--no-parent \
+		--page-requisites \
+		--recursive \
+		--restrict-file-names=windows \
+		--domains 2015.djangocon.eu \
+		https://2015.djangocon.eu
 
 2015-us:
 	wget \
-     --recursive \
-     --no-clobber \
-     --no-check-certificate \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains 2015.djangocon.us,djangocon-us.global.ssl.fastly.net \
-     --no-parent \
-    https://2015.djangocon.us
+		--convert-links \
+		--html-extension \
+		--no-check-certificate \
+		--no-clobber \
+		--no-parent \
+		--page-requisites \
+		--recursive \
+		--restrict-file-names=windows \
+		--domains 2015.djangocon.us,djangocon-us.global.ssl.fastly.net \
+	    https://2015.djangocon.us
 
 2014-eu:
 	wget \
-     --recursive \
-     --no-clobber \
-     --no-check-certificate \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains 2014.djangocon.eu \
-     --no-parent \
-    http://2014.djangocon.eu/
+		--convert-links \
+		--html-extension \
+		--no-check-certificate \
+		--no-clobber \
+		--no-parent \
+		--page-requisites \
+		--recursive \
+		--restrict-file-names=windows \
+		--domains 2014.djangocon.eu \
+		http://2014.djangocon.eu/
 
 2014-us:
 	wget \
-     --recursive \
-     --no-clobber \
-     --no-check-certificate \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains 2014.djangocon.us \
-     --no-parent \
-    https://2014.djangocon.us/
+		--convert-links \
+		--html-extension \
+		--no-check-certificate \
+		--no-clobber \
+		--no-parent \
+		--page-requisites \
+		--recursive \
+		--restrict-file-names=windows \
+		--domains 2014.djangocon.us \
+		https://2014.djangocon.us/
 
 2013-eu:
 	wget \
-     --recursive \
-     --no-clobber \
-     --no-check-certificate \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains 2013.djangocon.eu \
-     --no-parent \
-    http://2013.djangocon.eu/
+		--convert-links \
+		--html-extension \
+		--no-check-certificate \
+		--no-clobber \
+		--no-parent \
+		--page-requisites \
+		--recursive \
+		--restrict-file-names=windows \
+		--domains 2013.djangocon.eu \
+		http://2013.djangocon.eu/
 
 2013-us:
 	@echo "The 2013 US website is broken :/ "
@@ -91,42 +91,42 @@ help:
 
 2012-us:
 	wget \
-     --recursive \
-     --no-clobber \
-     --no-check-certificate \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains 2012.djangocon.us \
-     --no-parent \
-    http://2012.djangocon.us/
+		--convert-links \
+		--html-extension \
+		--no-check-certificate \
+		--no-clobber \
+		--no-parent \
+		--page-requisites \
+		--recursive \
+		--restrict-file-names=windows \
+		--domains 2012.djangocon.us \
+		http://2012.djangocon.us/
 
 2011-eu:
 	wget \
-     --recursive \
-     --no-clobber \
-     --no-check-certificate \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains 2011.djangocon.eu \
-     --no-parent \
-    http://2011.djangocon.eu/
+		--convert-links \
+		--html-extension \
+		--no-check-certificate \
+		--no-clobber \
+		--no-parent \
+		--page-requisites \
+		--recursive \
+		--restrict-file-names=windows \
+		--domains 2011.djangocon.eu \
+		http://2011.djangocon.eu/
 
 2011-us:
 	wget \
-     --recursive \
-     --no-clobber \
-     --no-check-certificate \
-     --page-requisites \
-     --html-extension \
-     --convert-links \
-     --restrict-file-names=windows \
-     --domains 2011.djangocon.us \
-     --no-parent \
-    http://2011.djangocon.us/
+		--convert-links \
+		--html-extension \
+		--no-check-certificate \
+		--no-clobber \
+		--no-parent \
+		--page-requisites \
+		--recursive \
+		--restrict-file-names=windows \
+		--domains 2011.djangocon.us \
+		http://2011.djangocon.us/
 
 2010-us:
 		@echo "The 2010 US website is broken :/ "
