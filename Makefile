@@ -84,7 +84,9 @@ help:
 		http://2013.djangocon.eu/
 
 2013-us:
-	@echo "The 2013 US website is broken :/ "
+	wayback_machine_downloader \
+		http://www.djangocon.us/ \
+		--timestamp 20131213092822
 
 2012-eu:
 	@echo "The 2012 EU website is broken :/ "
@@ -129,7 +131,11 @@ help:
 		http://2011.djangocon.us/
 
 2010-us:
-		@echo "The 2010 US website is broken :/ "
+	@echo "The 2010 US website is broken :/ "
+
+	wayback_machine_downloader \
+		http://www.djangocon.us/ \
+		--timestamp 20101213193332
 
 2009-us:
 		@echo "The 2009 US website is broken :/ "
