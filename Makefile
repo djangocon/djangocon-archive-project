@@ -119,7 +119,7 @@ help:
 		--timestamp 20101213193332
 
 2009-us:
-		@echo "The 2009 US website is broken :/ "
+	@echo "The 2009 US website is broken :/ "
 
 2008-us:
-		@echo "The 2008 US website is broken :/ "
+	@echo "The 2008 US website is broken :/ "
