@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+
+Sitemap: http://www.djangocon.us/sitemap.xml
