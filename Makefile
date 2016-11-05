@@ -88,7 +88,7 @@ help:
 2013-us:
 	wayback_machine_downloader \
 		http://www.djangocon.us/ \
-		--timestamp 20131213092822
+		--to 20131213092822
 
 2012-eu:
 	@echo "The 2012 EU website is broken :/ "
