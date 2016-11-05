@@ -19,7 +19,6 @@
 WGET_OPTIONS = --convert-links \
 		--html-extension \
 		--no-check-certificate \
-		--no-clobber \
 		--no-parent \
 		--page-requisites \
 		--recursive \
