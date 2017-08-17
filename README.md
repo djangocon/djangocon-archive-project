@@ -2,10 +2,9 @@
 
 The goal of this project is to archive past DjangoCon websites. Some of the websites are no longer around outside of the [Wayback Machine](https://archive.org/) :/
 
-
 ## Status
 
-The following websites were archived.
+The following websites have been archived or are in progress.
 
 | year | country | status    | repo                                                             |
 | :--: | :------ | :-------: | :--------------------------------------------------------------: |
