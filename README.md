@@ -81,41 +81,41 @@ download an entire website from the Internet Archive Wayback Machine.
 
 ### 2008.djangocon.us
 
-[![](screenshots/2008-djangocon-us-1280x1024.png))](https://2008.djangocon.us)
+[![](screenshots/2008-djangocon-us-1280x1024.png)](https://2008.djangocon.us)
 
 ### 2009.djangocon.us
 
-[![](screenshots/2009-djangocon-us-1280x1024.png))](https://2009.djangocon.us)
+[![](screenshots/2009-djangocon-us-1280x1024.png)](https://2009.djangocon.us)
 
 ### 2010.djangocon.us
 
-[![](screenshots/2010-djangocon-us-1280x1024.png))](https://2010.djangocon.us)
+[![](screenshots/2010-djangocon-us-1280x1024.png)](https://2010.djangocon.us)
 
 ### 2011.djangocon.us
 
-[![](screenshots/2011-djangocon-us-1280x1024.png))](https://2011.djangocon.us)
+[![](screenshots/2011-djangocon-us-1280x1024.png)](https://2011.djangocon.us)
 
 ### 2012.djangocon.us
 
-[![](screenshots/2012-djangocon-us-1280x1024.png))](http://2012.djangocon.us)
+[![](screenshots/2012-djangocon-us-1280x1024.png)](http://2012.djangocon.us)
 
 ### 2013.djangocon.us
 
-[![](screenshots/2013-djangocon-us-1280x1024.png))](https://2013.djangocon.us)
+[![](screenshots/2013-djangocon-us-1280x1024.png)](https://2013.djangocon.us)
 
 ### 2014.djangocon.us
 
-[![](screenshots/2014-djangocon-us-1280x1024.png))](https://2014.djangocon.us)
+[![](screenshots/2014-djangocon-us-1280x1024.png)](https://2014.djangocon.us)
 
 ### 2015.djangocon.us
 
-[![](screenshots/2015-djangocon-us-1280x1024.png))](https://2015.djangocon.us)
+[![](screenshots/2015-djangocon-us-1280x1024.png)](https://2015.djangocon.us)
 
 ### 2016.djangocon.us
 
-[![](screenshots/2016-djangocon-us-1280x1024.png))](https://2016.djangocon.us)
+[![](screenshots/2016-djangocon-us-1280x1024.png)](https://2016.djangocon.us)
 
 ### 2017.djangocon.us
 
-[![](screenshots/2017-djangocon-us-1280x1024.png))](https://2017.djangocon.us)
+[![](screenshots/2017-djangocon-us-1280x1024.png)](https://2017.djangocon.us)
 
