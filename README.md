@@ -10,12 +10,11 @@ Some of the websites are broken, and our only option of archiving them is to rec
 
 | symbol        | description                                      |
 | :------------ | :----------------------------------------------- |
-| :exclamation: | Needs a champion                                 |
+| :lock:        | Serves over SSL                                  |
 | :sos:         | An archive was not available.                    |
 | :thumbsup:    | We are serving the website from a static version |
 | :warning:     | Needs verified or has link issues.               |
-| :wave:        | We could use help archiving                      |
-| :lock:        | Serves over SSL                                  |
+| :wave:        | Needs a champion to help archive                 |
 | :unlock:      | Does not work over SSL                           |
 
 The following websites were archived.
