@@ -1,4 +1,4 @@
-# DjangoCon Backups
+# DjangoCon Archive Project
 
 The goal of this project is to archive past DjangoCon websites. 
 
