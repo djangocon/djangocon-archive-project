@@ -1,5 +1,8 @@
 .PHONY: all
 
+IMAGE_SIZE = 1280x1024
+YEARS := 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008
+
 WGET_OPTIONS = --convert-links \
 		--html-extension \
 		--no-check-certificate \
@@ -9,6 +12,17 @@ WGET_OPTIONS = --convert-links \
 		--user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36" \
 		-w 10 \
 		--restrict-file-names=windows
+
+.PHONY: screenshots
+screenshots:
+	@echo "check out... https://github.com/sindresorhus/pageres-cli"
+
+	@for year in $(YEARS) ; do \
+		pageres https://$$year.djangocon.us $(IMAGE_SIZE) \
+			--crop \
+			--overwrite \
+			--filename=screenshots/$$year-djangocon-us ; \
+	done
 
 .PHONY: help
 help:

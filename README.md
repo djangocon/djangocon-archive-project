@@ -40,7 +40,8 @@ The following websites were archived.
 | 2017 | AU      | :thumbsup:    | [:globe_with_meridians:](https://2017.djangocon.com.au)  [:octocat:](https://github.com/djangocon/2017.djangocon.com.au)      |                                                                                                                               |                           |
 | 2017 | Europe  | :wave:        | [:globe_with_meridians:](https://2017.djangocon.eu)      [:octocat:](https://github.com/djangocon/2017.djangocon.eu)          | [![](https://travis-ci.org/djangocon/2017.djangocon.eu.svg?branch=master)](https://travis-ci.org/djangocon/2017.djangocon.eu) |                           |
 | 2017 | US      | :thumbsup:    | [:globe_with_meridians:](https://2017.djangocon.us)      [:octocat:](https://github.com/djangocon/2017.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2017.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2017.djangocon.us) | Designed for Github Pages |
-| 2018 | US      | :thumbsup:    | [:globe_with_meridians:](https://2018.djangocon.us)      [:octocat:](https://github.com/djangocon/2018.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2018.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2017.djangocon.us) | Designed for Github Pages |
+| 2018 | US      | :thumbsup:    | [:globe_with_meridians:](https://2018.djangocon.us)      [:octocat:](https://github.com/djangocon/2018.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2018.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2018.djangocon.us) | Designed for Github Pages |
+| 2019 | US      | :thumbsup:    | [:globe_with_meridians:](https://2019.djangocon.us)      [:octocat:](https://github.com/djangocon/2019.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2019.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2019.djangocon.us) | Designed for Github Pages |
 
 ## General
 
@@ -81,41 +82,71 @@ download an entire website from the Internet Archive Wayback Machine.
 
 ### 2008.djangocon.us
 
-[![](screenshots/2008-djangocon-us-1280x1024.png)](https://2008.djangocon.us)
+[![](screenshots/2008-djangocon-us.png)](https://2008.djangocon.us)
+
+----
 
 ### 2009.djangocon.us
 
-[![](screenshots/2009-djangocon-us-1280x1024.png)](https://2009.djangocon.us)
+[![](screenshots/2009-djangocon-us.png)](https://2009.djangocon.us)
+
+----
 
 ### 2010.djangocon.us
 
-[![](screenshots/2010-djangocon-us-1280x1024.png)](https://2010.djangocon.us)
+[![](screenshots/2010-djangocon-us.png)](https://2010.djangocon.us)
+
+----
 
 ### 2011.djangocon.us
 
-[![](screenshots/2011-djangocon-us-1280x1024.png)](https://2011.djangocon.us)
+[![](screenshots/2011-djangocon-us.png)](https://2011.djangocon.us)
+
+----
 
 ### 2012.djangocon.us
 
 [![](screenshots/2012-djangocon-us-1280x1024.png)](http://2012.djangocon.us)
 
+----
+
 ### 2013.djangocon.us
 
-[![](screenshots/2013-djangocon-us-1280x1024.png)](https://2013.djangocon.us)
+[![](screenshots/2013-djangocon-us.png)](https://2013.djangocon.us)
+
+----
 
 ### 2014.djangocon.us
 
-[![](screenshots/2014-djangocon-us-1280x1024.png)](https://2014.djangocon.us)
+[![](screenshots/2014-djangocon-us.png)](https://2014.djangocon.us)
+
+----
 
 ### 2015.djangocon.us
 
-[![](screenshots/2015-djangocon-us-1280x1024.png)](https://2015.djangocon.us)
+[![](screenshots/2015-djangocon-us.png)](https://2015.djangocon.us)
+
+----
 
 ### 2016.djangocon.us
 
-[![](screenshots/2016-djangocon-us-1280x1024.png)](https://2016.djangocon.us)
+[![](screenshots/2016-djangocon-us.png)](https://2016.djangocon.us)
+
+----
 
 ### 2017.djangocon.us
 
-[![](screenshots/2017-djangocon-us-1280x1024.png)](https://2017.djangocon.us)
+[![](screenshots/2017-djangocon-us.png)](https://2017.djangocon.us)
+
+----
+
+### 2018.djangocon.us
+
+[![](screenshots/2018-djangocon-us.png)](https://2018.djangocon.us)
+
+----
+
+### 2019.djangocon.us
+
+[![](screenshots/2019-djangocon-us.png)](https://2019.djangocon.us)
 
