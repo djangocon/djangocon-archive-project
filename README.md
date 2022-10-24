@@ -8,44 +8,47 @@ Some of the websites are broken, and our only option of archiving them is to rec
 
 ### Legend
 
-| symbol        | description                                      |
-| :------------ | :----------------------------------------------- |
-| :sos:         | An archive was not available.                    |
-| :thumbsup:    | We are serving the website from a static version |
-| :warning:     | Needs verified or has link issues.               |
-| :wave:        | Needs a champion to help archive                 |
-| :lock:        | Serves over SSL                                  |
-| :unlock:      | Does not work over SSL                           |
+| symbol              | description                                      |
+| :------------------ | :----------------------------------------------- |
+| :sos:               | An archive was not available.                    |
+| :check_mark_button: | We are serving the website from a static version |
+| :warning:           | Needs verified or has link issues.               |
+| :wave:              | Needs a champion to help archive                 |
+| :lock:              | Serves over SSL                                  |
+| :unlock:            | Does not work over SSL                           |
 
 The following websites were archived.
 
-| year | country | backup status | links                                                                                                                         | build status                                                                                                                  | notes                     |
-| :--: | :------ | :------------ | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| 2008 | US      | :sos:         | [:globe_with_meridians:](https://2008.djangocon.us)      [:octocat:](https://github.com/djangocon/2008.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2008.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2008.djangocon.us) |                           |
-| 2009 | US      | :warning:     | [:globe_with_meridians:](https://2009.djangocon.us)      [:octocat:](https://github.com/djangocon/2009.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2009.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2009.djangocon.us) |                           |
-| 2010 | Europe  | :sos:         | [:globe_with_meridians:](http://2010.djangocon.eu)                                                                            |                                                                                                                               |                           |
-| 2010 | US      | :warning:     | [:globe_with_meridians:](https://2010.djangocon.us)      [:octocat:](https://github.com/djangocon/2010.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2010.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2010.djangocon.us) |                           |
-| 2011 | Europe  | :wave:        | [:globe_with_meridians:](http://2011.djangocon.eu)                                                                            |                                                                                                                               |                           |
-| 2011 | US      | :warning:     | [:globe_with_meridians:](https://2011.djangocon.us)      [:octocat:](https://github.com/djangocon/2011.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2011.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2011.djangocon.us) |                           |
-| 2012 | Europe  | :wave:        | [:globe_with_meridians:](http://2012.djangocon.eu)                                                                            |                                                                                                                               |                           |
-| 2012 | US      | :sos:         | [:globe_with_meridians:](https://2012.djangocon.us)      [:octocat:](https://github.com/djangocon/2012.djangocon.us) :unlock: | [![](https://travis-ci.org/djangocon/2012.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2012.djangocon.us) |                           |
-| 2013 | Europe  | :wave:        | [:globe_with_meridians:](http://2013.djangocon.eu)       [:octocat:](https://github.com/djangocon/2013.djangocon.eu)          |                                                                                                                               |                           |
-| 2013 | US      | :warning:     | [:globe_with_meridians:](https://2013.djangocon.us)      [:octocat:](https://github.com/djangocon/2013.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2013.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2013.djangocon.us) |                           |
-| 2014 | Europe  | :wave:        | [:globe_with_meridians:](http://2014.djangocon.eu)                                                                            |                                                                                                                               |                           |
-| 2014 | US      | :warning:     | [:globe_with_meridians:](https://2014.djangocon.us)      [:octocat:](https://github.com/djangocon/2014.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2014.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2014.djangocon.us) |                           |
-| 2015 | Europe  | :wave:        | [:globe_with_meridians:](http://2015.djangocon.eu)       [:octocat:](https://github.com/djangocon/2015.djangocon.eu)          |                                                                                                                               |                           |
-| 2015 | US      | :warning:     | [:globe_with_meridians:](https://2015.djangocon.us)      [:octocat:](https://github.com/djangocon/2015.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2015.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2015.djangocon.us) |                           |
-| 2016 | Europe  | :wave:        | [:globe_with_meridians:](https://2016.djangocon.eu)      [:octocat:](https://github.com/djangocon/2016.djangocon.eu)          |                                                                                                                               |                           |
-| 2016 | US      | :warning:     | [:globe_with_meridians:](https://2016.djangocon.us)      [:octocat:](https://github.com/djangocon/2016.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2016.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2016.djangocon.us) |                           |
-| 2017 | AU      | :thumbsup:    | [:globe_with_meridians:](https://2017.djangocon.com.au)  [:octocat:](https://github.com/djangocon/2017.djangocon.com.au)      |                                                                                                                               |                           |
-| 2017 | Europe  | :wave:        | [:globe_with_meridians:](https://2017.djangocon.eu)      [:octocat:](https://github.com/djangocon/2017.djangocon.eu)          | [![](https://travis-ci.org/djangocon/2017.djangocon.eu.svg?branch=master)](https://travis-ci.org/djangocon/2017.djangocon.eu) |                           |
-| 2017 | US      | :thumbsup:    | [:globe_with_meridians:](https://2017.djangocon.us)      [:octocat:](https://github.com/djangocon/2017.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2017.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2017.djangocon.us) | Designed for Github Pages |
-| 2018 | AU      | :thumbsup:    | [:globe_with_meridians:](https://2018.djangocon.com.au)  [:octocat:](https://github.com/djangocon/2018.djangocon.com.au)      |                                                                                                                               | Designed for Github Pages |
-| 2018 | Europe  | :thumbsup:    | [:globe_with_meridians:](https://2018.djangocon.eu)      [:octocat:](https://github.com/djangocon/2018.djangocon.eu) :lock:   | [![](https://travis-ci.org/djangocon/2018.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2018.djangocon.eu) | Designed for Github Pages |
-| 2018 | US      | :thumbsup:    | [:globe_with_meridians:](https://2018.djangocon.us)      [:octocat:](https://github.com/djangocon/2018.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2018.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2018.djangocon.us) | Designed for Github Pages |
-| 2019 | AU      | :thumbsup:    | [:globe_with_meridians:](https://2019.djangocon.com.au)  [:octocat:](https://github.com/djangocon/2019.djangocon.com.au)      |                                                                                                                               | Designed for Github Pages |
-| 2019 | Europe  | :warning:     | [:globe_with_meridians:](https://2019.djangocon.eu)      [:octocat:](https://github.com/djangocon/2019.djangocon.eu) :lock:   | [![](https://travis-ci.org/djangocon/2019.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2019.djangocon.eu) |                           |
-| 2019 | US      | :thumbsup:    | [:globe_with_meridians:](https://2019.djangocon.us)      [:octocat:](https://github.com/djangocon/2019.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2019.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2019.djangocon.us) | Designed for Github Pages |
+| year | country | backup status       | links                                                                                                                         | build status                                                                                                                  | notes                     |
+| :--: | :------ | :------------------ | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| 2008 | US      | :sos:               | [:globe_with_meridians:](https://2008.djangocon.us)      [:octocat:](https://github.com/djangocon/2008.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2008.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2008.djangocon.us) |                           |
+| 2009 | US      | :warning:           | [:globe_with_meridians:](https://2009.djangocon.us)      [:octocat:](https://github.com/djangocon/2009.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2009.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2009.djangocon.us) |                           |
+| 2010 | Europe  | :sos:               | [:globe_with_meridians:](http://2010.djangocon.eu)                                                                            |                                                                                                                               |                           |
+| 2010 | US      | :warning:           | [:globe_with_meridians:](https://2010.djangocon.us)      [:octocat:](https://github.com/djangocon/2010.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2010.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2010.djangocon.us) |                           |
+| 2011 | Europe  | :wave:              | [:globe_with_meridians:](http://2011.djangocon.eu)                                                                            |                                                                                                                               |                           |
+| 2011 | US      | :warning:           | [:globe_with_meridians:](https://2011.djangocon.us)      [:octocat:](https://github.com/djangocon/2011.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2011.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2011.djangocon.us) |                           |
+| 2012 | Europe  | :wave:              | [:globe_with_meridians:](http://2012.djangocon.eu)                                                                            |                                                                                                                               |                           |
+| 2012 | US      | :sos:               | [:globe_with_meridians:](https://2012.djangocon.us)      [:octocat:](https://github.com/djangocon/2012.djangocon.us) :unlock: | [![](https://travis-ci.org/djangocon/2012.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2012.djangocon.us) |                           |
+| 2013 | Europe  | :wave:              | [:globe_with_meridians:](http://2013.djangocon.eu)       [:octocat:](https://github.com/djangocon/2013.djangocon.eu)          |                                                                                                                               |                           |
+| 2013 | US      | :warning:           | [:globe_with_meridians:](https://2013.djangocon.us)      [:octocat:](https://github.com/djangocon/2013.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2013.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2013.djangocon.us) |                           |
+| 2014 | Europe  | :wave:              | [:globe_with_meridians:](http://2014.djangocon.eu)                                                                            |                                                                                                                               |                           |
+| 2014 | US      | :warning:           | [:globe_with_meridians:](https://2014.djangocon.us)      [:octocat:](https://github.com/djangocon/2014.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2014.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2014.djangocon.us) |                           |
+| 2015 | Europe  | :wave:              | [:globe_with_meridians:](http://2015.djangocon.eu)       [:octocat:](https://github.com/djangocon/2015.djangocon.eu)          |                                                                                                                               |                           |
+| 2015 | US      | :warning:           | [:globe_with_meridians:](https://2015.djangocon.us)      [:octocat:](https://github.com/djangocon/2015.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2015.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2015.djangocon.us) |                           |
+| 2016 | Europe  | :wave:              | [:globe_with_meridians:](https://2016.djangocon.eu)      [:octocat:](https://github.com/djangocon/2016.djangocon.eu)          |                                                                                                                               |                           |
+| 2016 | US      | :warning:           | [:globe_with_meridians:](https://2016.djangocon.us)      [:octocat:](https://github.com/djangocon/2016.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2016.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2016.djangocon.us) |                           |
+| 2017 | AU      | :check_mark_button: | [:globe_with_meridians:](https://2017.djangocon.com.au)  [:octocat:](https://github.com/djangocon/2017.djangocon.com.au)      |                                                                                                                               |                           |
+| 2017 | Europe  | :wave:              | [:globe_with_meridians:](https://2017.djangocon.eu)      [:octocat:](https://github.com/djangocon/2017.djangocon.eu)          | [![](https://travis-ci.org/djangocon/2017.djangocon.eu.svg?branch=master)](https://travis-ci.org/djangocon/2017.djangocon.eu) |                           |
+| 2017 | US      | :check_mark_button: | [:globe_with_meridians:](https://2017.djangocon.us)      [:octocat:](https://github.com/djangocon/2017.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2017.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2017.djangocon.us) | Designed for Github Pages |
+| 2018 | AU      | :check_mark_button: | [:globe_with_meridians:](https://2018.djangocon.com.au)  [:octocat:](https://github.com/djangocon/2018.djangocon.com.au)      |                                                                                                                               | Designed for Github Pages |
+| 2018 | Europe  | :check_mark_button: | [:globe_with_meridians:](https://2018.djangocon.eu)      [:octocat:](https://github.com/djangocon/2018.djangocon.eu) :lock:   | [![](https://travis-ci.org/djangocon/2018.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2018.djangocon.eu) | Designed for Github Pages |
+| 2018 | US      | :check_mark_button: | [:globe_with_meridians:](https://2018.djangocon.us)      [:octocat:](https://github.com/djangocon/2018.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2018.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2018.djangocon.us) | Designed for Github Pages |
+| 2019 | AU      | :check_mark_button: | [:globe_with_meridians:](https://2019.djangocon.com.au)  [:octocat:](https://github.com/djangocon/2019.djangocon.com.au)      |                                                                                                                               | Designed for Github Pages |
+| 2019 | Europe  | :warning:           | [:globe_with_meridians:](https://2019.djangocon.eu)      [:octocat:](https://github.com/djangocon/2019.djangocon.eu) :lock:   | [![](https://travis-ci.org/djangocon/2019.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2019.djangocon.eu) |                           |
+| 2019 | US      | :check_mark_button: | [:globe_with_meridians:](https://2019.djangocon.us)      [:octocat:](https://github.com/djangocon/2019.djangocon.us) :lock:   | [![](https://travis-ci.org/djangocon/2019.djangocon.us.svg?branch=master)](https://travis-ci.org/djangocon/2019.djangocon.us) | Designed for Github Pages |
+| 2020 | US      | :check_mark_button: | [:globe_with_meridians:](https://2020.djangocon.us)      [:octocat:](https://github.com/djangocon/2019.djangocon.us) :lock:   |                                                                                                                               | Designed for Github Pages |
+| 2021 | US      | :check_mark_button: | [:globe_with_meridians:](https://2021.djangocon.us)      [:octocat:](https://github.com/djangocon/2019.djangocon.us) :lock:   |                                                                                                                               | Designed for Github Pages |
+| 2022 | US      | :check_mark_button: | [:globe_with_meridians:](https://2022.djangocon.us)      [:octocat:](https://github.com/djangocon/2019.djangocon.us) :lock:   |                                                                                                                               | Designed for Github Pages |
 
 ## General
 
@@ -67,11 +70,12 @@ We then flatten the pages into the `_pages` folder and run the through Jekyll. E
 
 **Please note:** This varies from website to website that we have never found a nice, standardized way to accomplish this.
 
-The `Makefile` uses wget to spider each website into an offline copy. To run:
+TODO: rewrite to show how to use our `justfile`
 
 ```shell
-$ make 2013-eu
-$ make 2012-us
+# to get new screenshots
+$ just screenshots
+
 ```
 
 For some years, the websites are no longer available, but we can still view them from the
@@ -80,9 +84,16 @@ For some years, the websites are no longer available, but we can still view them
 The [wayback_machine_downloader](https://github.com/hartator/wayback-machine-downloader) can used to
 download an entire website from the Internet Archive Wayback Machine.
 
-----
-
 ## Screenshots
+<!-- [[[cog
+import cog
+for year in range(2008, 2023):
+    print("----\n")
+    print(f"### {year}.djangocon.us\n")
+    print(f"[![](screenshots/{year}-djangocon-us.png)](https://{year}.djangocon.us)\n")
+
+]]] -->
+----
 
 ### 2008.djangocon.us
 
@@ -110,7 +121,7 @@ download an entire website from the Internet Archive Wayback Machine.
 
 ### 2012.djangocon.us
 
-[![](screenshots/2012-djangocon-us-1280x1024.png)](http://2012.djangocon.us)
+[![](screenshots/2012-djangocon-us.png)](https://2012.djangocon.us)
 
 ----
 
@@ -154,3 +165,22 @@ download an entire website from the Internet Archive Wayback Machine.
 
 [![](screenshots/2019-djangocon-us.png)](https://2019.djangocon.us)
 
+----
+
+### 2020.djangocon.us
+
+[![](screenshots/2020-djangocon-us.png)](https://2020.djangocon.us)
+
+----
+
+### 2021.djangocon.us
+
+[![](screenshots/2021-djangocon-us.png)](https://2021.djangocon.us)
+
+----
+
+### 2022.djangocon.us
+
+[![](screenshots/2022-djangocon-us.png)](https://2022.djangocon.us)
+
+<!-- [[[end]]] -->
