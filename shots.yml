@@ -3,7 +3,7 @@
 # height = 1024
 # quality = 80
 # width = 1280
-# for year in range(2008, 2023):
+# for year in range(2008, 2024):
 #     print(f"- output: ./screenshots/{year}-djangocon-us.png")
 #     print(f"  height: {height}")
 #     print(f"  quality: {quality}")
@@ -99,6 +99,12 @@
   height: 1024
   quality: 80
   url: https://2022.djangocon.us
+  width: 1280
+
+- output: ./screenshots/2023-djangocon-us.png
+  height: 1024
+  quality: 80
+  url: https://2023.djangocon.us
   width: 1280
 
 # [[[end]]]
