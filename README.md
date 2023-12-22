@@ -54,6 +54,7 @@ The following websites were archived.
 | 2022 | US      | :white_check_mark: | [:globe_with_meridians:](https://2022.djangocon.us)      [:octocat:](https://github.com/djangocon/2022.djangocon.us) :lock:   | Designed for Github Pages |
 | 2023 | Europe  | :white_check_mark: | [:globe_with_meridians:](https://2023.djangocon.eu)      [:octocat:](https://github.com/djangocon/2023.djangocon.eu) :lock:   | Designed for Github Pages |
 | 2023 | US      | :white_check_mark: | [:globe_with_meridians:](https://2023.djangocon.us)      [:octocat:](https://github.com/djangocon/2023.djangocon.us) :lock:   | Designed for Github Pages |
+| 2023 | Africa  | :white_check_mark: | [:globe_with_meridians:](https://2023.djangocon.africa)  [:octocat:](https://github.com/djangocon/2023.djangocon.africa) :lock: | Designed for Github Pages |
 
 ## General
 
