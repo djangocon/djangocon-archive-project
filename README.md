@@ -46,9 +46,13 @@ The following websites were archived.
 | 2019 | AU      | :white_check_mark: | [:globe_with_meridians:](https://2019.djangocon.com.au)  [:octocat:](https://github.com/djangocon/2019.djangocon.com.au)      | Designed for Github Pages |
 | 2019 | Europe  | :warning:          | [:globe_with_meridians:](https://2019.djangocon.eu)      [:octocat:](https://github.com/djangocon/2019.djangocon.eu) :lock:   |                           |
 | 2019 | US      | :white_check_mark: | [:globe_with_meridians:](https://2019.djangocon.us)      [:octocat:](https://github.com/djangocon/2019.djangocon.us) :lock:   | Designed for Github Pages |
+| 2020 | Europe  | :warning:          | [:globe_with_meridians:](https://2020.djangocon.eu)      [:octocat:](https://github.com/djangocon/2020.djangocon.eu) :lock:   |                           |
 | 2020 | US      | :white_check_mark: | [:globe_with_meridians:](https://2020.djangocon.us)      [:octocat:](https://github.com/djangocon/2020.djangocon.us) :lock:   | Designed for Github Pages |
+| 2021 | Europe  | :warning:          | [:globe_with_meridians:](https://2021.djangocon.eu)      [:octocat:](https://github.com/djangocon/2021.djangocon.eu) :lock:   |                           |
 | 2021 | US      | :white_check_mark: | [:globe_with_meridians:](https://2021.djangocon.us)      [:octocat:](https://github.com/djangocon/2021.djangocon.us) :lock:   | Designed for Github Pages |
+| 2022 | Europe  | :warning:          | [:globe_with_meridians:](https://2022.djangocon.eu)      [:octocat:](https://github.com/djangocon/2022.djangocon.eu) :lock:   |                           |
 | 2022 | US      | :white_check_mark: | [:globe_with_meridians:](https://2022.djangocon.us)      [:octocat:](https://github.com/djangocon/2022.djangocon.us) :lock:   | Designed for Github Pages |
+| 2023 | Europe  | :white_check_mark: | [:globe_with_meridians:](https://2023.djangocon.eu)      [:octocat:](https://github.com/djangocon/2023.djangocon.eu) :lock:   | Designed for Github Pages |
 | 2023 | US      | :white_check_mark: | [:globe_with_meridians:](https://2023.djangocon.us)      [:octocat:](https://github.com/djangocon/2023.djangocon.us) :lock:   | Designed for Github Pages |
 
 ## General
