@@ -98,6 +98,10 @@ for year in range(2008, 2024):
         print("----\n")
         print(f"### {year}.djangocon.eu\n")
         print(f"[![](screenshots/{year}-djangocon-eu.png)](https://{year}.djangocon.eu)\n")
+    if year > 2012:
+        print("----\n")
+        print(f"### {year}.djangocon.com.au\n")
+        print(f"[![](screenshots/{year}-djangocon-au.png)](https://{year}.djangocon.com.au)\n")
     print("----\n")
     print(f"### {year}.djangocon.us\n")
     print(f"[![](screenshots/{year}-djangocon-us.png)](https://{year}.djangocon.us)\n")
@@ -140,9 +144,21 @@ for year in range(2008, 2024):
 
 ----
 
+### 2013.djangocon.com.au
+
+[![](screenshots/2013-djangocon-au.png)](https://2013.djangocon.com.au)
+
+----
+
 ### 2013.djangocon.us
 
 [![](screenshots/2013-djangocon-us.png)](https://2013.djangocon.us)
+
+----
+
+### 2014.djangocon.com.au
+
+[![](screenshots/2014-djangocon-au.png)](https://2014.djangocon.com.au)
 
 ----
 
@@ -158,6 +174,12 @@ for year in range(2008, 2024):
 
 ----
 
+### 2015.djangocon.com.au
+
+[![](screenshots/2015-djangocon-au.png)](https://2015.djangocon.com.au)
+
+----
+
 ### 2015.djangocon.us
 
 [![](screenshots/2015-djangocon-us.png)](https://2015.djangocon.us)
@@ -167,6 +189,12 @@ for year in range(2008, 2024):
 ### 2016.djangocon.eu
 
 [![](screenshots/2016-djangocon-eu.png)](https://2016.djangocon.eu)
+
+----
+
+### 2016.djangocon.com.au
+
+[![](screenshots/2016-djangocon-au.png)](https://2016.djangocon.com.au)
 
 ----
 
@@ -182,6 +210,12 @@ for year in range(2008, 2024):
 
 ----
 
+### 2017.djangocon.com.au
+
+[![](screenshots/2017-djangocon-au.png)](https://2017.djangocon.com.au)
+
+----
+
 ### 2017.djangocon.us
 
 [![](screenshots/2017-djangocon-us.png)](https://2017.djangocon.us)
@@ -191,6 +225,12 @@ for year in range(2008, 2024):
 ### 2018.djangocon.eu
 
 [![](screenshots/2018-djangocon-eu.png)](https://2018.djangocon.eu)
+
+----
+
+### 2018.djangocon.com.au
+
+[![](screenshots/2018-djangocon-au.png)](https://2018.djangocon.com.au)
 
 ----
 
@@ -206,6 +246,12 @@ for year in range(2008, 2024):
 
 ----
 
+### 2019.djangocon.com.au
+
+[![](screenshots/2019-djangocon-au.png)](https://2019.djangocon.com.au)
+
+----
+
 ### 2019.djangocon.us
 
 [![](screenshots/2019-djangocon-us.png)](https://2019.djangocon.us)
@@ -215,6 +261,12 @@ for year in range(2008, 2024):
 ### 2020.djangocon.eu
 
 [![](screenshots/2020-djangocon-eu.png)](https://2020.djangocon.eu)
+
+----
+
+### 2020.djangocon.com.au
+
+[![](screenshots/2020-djangocon-au.png)](https://2020.djangocon.com.au)
 
 ----
 
@@ -230,6 +282,12 @@ for year in range(2008, 2024):
 
 ----
 
+### 2021.djangocon.com.au
+
+[![](screenshots/2021-djangocon-au.png)](https://2021.djangocon.com.au)
+
+----
+
 ### 2021.djangocon.us
 
 [![](screenshots/2021-djangocon-us.png)](https://2021.djangocon.us)
@@ -242,6 +300,12 @@ for year in range(2008, 2024):
 
 ----
 
+### 2022.djangocon.com.au
+
+[![](screenshots/2022-djangocon-au.png)](https://2022.djangocon.com.au)
+
+----
+
 ### 2022.djangocon.us
 
 [![](screenshots/2022-djangocon-us.png)](https://2022.djangocon.us)
@@ -251,6 +315,12 @@ for year in range(2008, 2024):
 ### 2023.djangocon.eu
 
 [![](screenshots/2023-djangocon-eu.png)](https://2023.djangocon.eu)
+
+----
+
+### 2023.djangocon.com.au
+
+[![](screenshots/2023-djangocon-au.png)](https://2023.djangocon.com.au)
 
 ----
 
