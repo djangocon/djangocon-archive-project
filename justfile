@@ -3,7 +3,7 @@
 
 @bootstrap:
     just update
-    playwright install
+    shot-scraper install
 
 @fmt:
     just --fmt --unstable
@@ -20,4 +20,4 @@
 
 @update:
     pip install -U pip
-    pip install -U cogapp playwright shot-scraper
+    pip install -U cogapp shot-scraper
