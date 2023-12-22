@@ -10,6 +10,13 @@
 #     print(f"  url: https://{year}.djangocon.us")
 #     print(f"  width: {width}")
 #     print("")
+#     if year > 2011 and year not in [2013, 2014]:
+#         print(f"- output: ./screenshots/{year}-djangocon-eu.png")
+#         print(f"  height: {height}")
+#         print(f"  quality: {quality}")
+#         print(f"  url: https://{year}.djangocon.eu")
+#         print(f"  width: {width}")
+#         print("")
 # ]]]
 - output: ./screenshots/2008-djangocon-us.png
   height: 1024
@@ -41,6 +48,12 @@
   url: https://2012.djangocon.us
   width: 1280
 
+- output: ./screenshots/2012-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2012.djangocon.eu
+  width: 1280
+
 - output: ./screenshots/2013-djangocon-us.png
   height: 1024
   quality: 80
@@ -59,10 +72,22 @@
   url: https://2015.djangocon.us
   width: 1280
 
+- output: ./screenshots/2015-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2015.djangocon.eu
+  width: 1280
+
 - output: ./screenshots/2016-djangocon-us.png
   height: 1024
   quality: 80
   url: https://2016.djangocon.us
+  width: 1280
+
+- output: ./screenshots/2016-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2016.djangocon.eu
   width: 1280
 
 - output: ./screenshots/2017-djangocon-us.png
@@ -71,10 +96,22 @@
   url: https://2017.djangocon.us
   width: 1280
 
+- output: ./screenshots/2017-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2017.djangocon.eu
+  width: 1280
+
 - output: ./screenshots/2018-djangocon-us.png
   height: 1024
   quality: 80
   url: https://2018.djangocon.us
+  width: 1280
+
+- output: ./screenshots/2018-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2018.djangocon.eu
   width: 1280
 
 - output: ./screenshots/2019-djangocon-us.png
@@ -83,10 +120,22 @@
   url: https://2019.djangocon.us
   width: 1280
 
+- output: ./screenshots/2019-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2019.djangocon.eu
+  width: 1280
+
 - output: ./screenshots/2020-djangocon-us.png
   height: 1024
   quality: 80
   url: https://2020.djangocon.us
+  width: 1280
+
+- output: ./screenshots/2020-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2020.djangocon.eu
   width: 1280
 
 - output: ./screenshots/2021-djangocon-us.png
@@ -95,10 +144,22 @@
   url: https://2021.djangocon.us
   width: 1280
 
+- output: ./screenshots/2021-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2021.djangocon.eu
+  width: 1280
+
 - output: ./screenshots/2022-djangocon-us.png
   height: 1024
   quality: 80
   url: https://2022.djangocon.us
+  width: 1280
+
+- output: ./screenshots/2022-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2022.djangocon.eu
   width: 1280
 
 - output: ./screenshots/2023-djangocon-us.png
@@ -107,4 +168,16 @@
   url: https://2023.djangocon.us
   width: 1280
 
+- output: ./screenshots/2023-djangocon-eu.png
+  height: 1024
+  quality: 80
+  url: https://2023.djangocon.eu
+  width: 1280
+
 # [[[end]]]
+
+- output: ./screenshots/2023-djangocon-africa.png
+  height: 1024
+  quality: 80
+  url: https://2023.djangocon.africa
+  width: 1280

@@ -60,7 +60,7 @@ The following websites were archived.
 
 Each website should exist in their repo which will be served with GitHub Pages which makes reviewing pull requests easy. Cloudflare is providing us with free SSL so we can use https. Neat!
 
-The *.html files should live in a `_backup` folder in each repo.
+The `*.html` files should live in a `_backup` folder in each repo.
 
 We then flatten the pages into the `_pages` folder and run the through Jekyll. Each file uses frontmatter metadata to store the permalink, title, and TBD. 
 
@@ -94,10 +94,13 @@ download an entire website from the Internet Archive Wayback Machine.
 <!-- [[[cog
 import cog
 for year in range(2008, 2024):
+    if year > 2011 and year not in [2013, 2014]:
+        print("----\n")
+        print(f"### {year}.djangocon.eu\n")
+        print(f"[![](screenshots/{year}-djangocon-eu.png)](https://{year}.djangocon.eu)\n")
     print("----\n")
     print(f"### {year}.djangocon.us\n")
     print(f"[![](screenshots/{year}-djangocon-us.png)](https://{year}.djangocon.us)\n")
-
 ]]] -->
 ----
 
@@ -125,6 +128,12 @@ for year in range(2008, 2024):
 
 ----
 
+### 2012.djangocon.eu
+
+[![](screenshots/2012-djangocon-eu.png)](https://2012.djangocon.eu)
+
+----
+
 ### 2012.djangocon.us
 
 [![](screenshots/2012-djangocon-us.png)](https://2012.djangocon.us)
@@ -143,9 +152,21 @@ for year in range(2008, 2024):
 
 ----
 
+### 2015.djangocon.eu
+
+[![](screenshots/2015-djangocon-eu.png)](https://2015.djangocon.eu)
+
+----
+
 ### 2015.djangocon.us
 
 [![](screenshots/2015-djangocon-us.png)](https://2015.djangocon.us)
+
+----
+
+### 2016.djangocon.eu
+
+[![](screenshots/2016-djangocon-eu.png)](https://2016.djangocon.eu)
 
 ----
 
@@ -155,9 +176,21 @@ for year in range(2008, 2024):
 
 ----
 
+### 2017.djangocon.eu
+
+[![](screenshots/2017-djangocon-eu.png)](https://2017.djangocon.eu)
+
+----
+
 ### 2017.djangocon.us
 
 [![](screenshots/2017-djangocon-us.png)](https://2017.djangocon.us)
+
+----
+
+### 2018.djangocon.eu
+
+[![](screenshots/2018-djangocon-eu.png)](https://2018.djangocon.eu)
 
 ----
 
@@ -167,9 +200,21 @@ for year in range(2008, 2024):
 
 ----
 
+### 2019.djangocon.eu
+
+[![](screenshots/2019-djangocon-eu.png)](https://2019.djangocon.eu)
+
+----
+
 ### 2019.djangocon.us
 
 [![](screenshots/2019-djangocon-us.png)](https://2019.djangocon.us)
+
+----
+
+### 2020.djangocon.eu
+
+[![](screenshots/2020-djangocon-eu.png)](https://2020.djangocon.eu)
 
 ----
 
@@ -179,9 +224,21 @@ for year in range(2008, 2024):
 
 ----
 
+### 2021.djangocon.eu
+
+[![](screenshots/2021-djangocon-eu.png)](https://2021.djangocon.eu)
+
+----
+
 ### 2021.djangocon.us
 
 [![](screenshots/2021-djangocon-us.png)](https://2021.djangocon.us)
+
+----
+
+### 2022.djangocon.eu
+
+[![](screenshots/2022-djangocon-eu.png)](https://2022.djangocon.eu)
 
 ----
 
@@ -191,8 +248,19 @@ for year in range(2008, 2024):
 
 ----
 
+### 2023.djangocon.eu
+
+[![](screenshots/2023-djangocon-eu.png)](https://2023.djangocon.eu)
+
+----
+
 ### 2023.djangocon.us
 
 [![](screenshots/2023-djangocon-us.png)](https://2023.djangocon.us)
 
 <!-- [[[end]]] -->
+----
+
+### 2023.djangocon.africa
+
+[![](screenshots/2023-djangocon-africa.png)](https://2023.djangocon.africa)
