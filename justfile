@@ -10,7 +10,6 @@
 
 @rebuild:
     cog -rP README.md
-    cog -rP shots.yml
 
 @screenshots *ARGS:
     shot-scraper multi --no-clobber {{ ARGS }} ./shots.yml

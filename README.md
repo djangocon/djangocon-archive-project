@@ -172,12 +172,6 @@ with Path("shots.yml").open() as fp:
 
 ----
 
-### 2015.djangocon.eu
-
-[![](./screenshots/2015-djangocon-eu.png)](https://2015.djangocon.eu)
-
-----
-
 ### 2015.djangocon.com.au
 
 [![](./screenshots/2015-djangocon-au.png)](https://2015.djangocon.com.au)
@@ -274,6 +268,12 @@ with Path("shots.yml").open() as fp:
 
 ----
 
+### 2020.djangocon.africa
+
+[![](./screenshots/2020-djangocon-africa.png)](https://2020.djangocon.africa)
+
+----
+
 ### 2021.djangocon.us
 
 [![](./screenshots/2021-djangocon-us.png)](https://2021.djangocon.us)
@@ -292,12 +292,6 @@ with Path("shots.yml").open() as fp:
 
 ----
 
-### 2022.djangocon.us
-
-[![](./screenshots/2022-djangocon-us.png)](https://2022.djangocon.us)
-
-----
-
 ### 2022.djangocon.eu
 
 [![](./screenshots/2022-djangocon-eu.png)](https://2022.djangocon.eu)
@@ -310,9 +304,9 @@ with Path("shots.yml").open() as fp:
 
 ----
 
-### 2023.djangocon.us
+### 2022.djangocon.us
 
-[![](./screenshots/2023-djangocon-us.png)](https://2023.djangocon.us)
+[![](./screenshots/2022-djangocon-us.png)](https://2022.djangocon.us)
 
 ----
 
@@ -328,9 +322,9 @@ with Path("shots.yml").open() as fp:
 
 ----
 
-### 2020.djangocon.africa
+### 2023.djangocon.us
 
-[![](./screenshots/2020-djangocon-africa.png)](https://2020.djangocon.africa)
+[![](./screenshots/2023-djangocon-us.png)](https://2023.djangocon.us)
 
 ----
 
