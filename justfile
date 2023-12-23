@@ -20,4 +20,4 @@
 
 @update:
     pip install -U pip
-    pip install -U cogapp shot-scraper
+    pip install -U cogapp shot-scraper pyyaml

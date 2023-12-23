@@ -93,240 +93,250 @@ download an entire website from the Internet Archive Wayback Machine.
 ## Screenshots
 <!-- [[[cog
 import cog
-for year in range(2008, 2024):
-    if year > 2011 and year not in [2013, 2014]:
+import yaml
+from pathlib import Path
+
+with Path("shots.yml").open() as fp:
+    data = yaml.safe_load(fp)
+    for conference in data:
+        domain = conference['url'].replace("https://", "").replace("http://", "")
         print("----\n")
-        print(f"### {year}.djangocon.eu\n")
-        print(f"[![](screenshots/{year}-djangocon-eu.png)](https://{year}.djangocon.eu)\n")
-    if year > 2012:
-        print("----\n")
-        print(f"### {year}.djangocon.com.au\n")
-        print(f"[![](screenshots/{year}-djangocon-au.png)](https://{year}.djangocon.com.au)\n")
-    print("----\n")
-    print(f"### {year}.djangocon.us\n")
-    print(f"[![](screenshots/{year}-djangocon-us.png)](https://{year}.djangocon.us)\n")
+        print(f"### {domain}\n")
+        print(f"[![]({conference['output']})]({conference['url']})\n")
 ]]] -->
 ----
 
 ### 2008.djangocon.us
 
-[![](screenshots/2008-djangocon-us.png)](https://2008.djangocon.us)
+[![](./screenshots/2008-djangocon-us.png)](https://2008.djangocon.us)
 
 ----
 
 ### 2009.djangocon.us
 
-[![](screenshots/2009-djangocon-us.png)](https://2009.djangocon.us)
+[![](./screenshots/2009-djangocon-us.png)](https://2009.djangocon.us)
 
 ----
 
 ### 2010.djangocon.us
 
-[![](screenshots/2010-djangocon-us.png)](https://2010.djangocon.us)
+[![](./screenshots/2010-djangocon-us.png)](https://2010.djangocon.us)
 
 ----
 
 ### 2011.djangocon.us
 
-[![](screenshots/2011-djangocon-us.png)](https://2011.djangocon.us)
-
-----
-
-### 2012.djangocon.eu
-
-[![](screenshots/2012-djangocon-eu.png)](https://2012.djangocon.eu)
+[![](./screenshots/2011-djangocon-us.png)](https://2011.djangocon.us)
 
 ----
 
 ### 2012.djangocon.us
 
-[![](screenshots/2012-djangocon-us.png)](https://2012.djangocon.us)
+[![](./screenshots/2012-djangocon-us.png)](https://2012.djangocon.us)
 
 ----
 
-### 2013.djangocon.com.au
+### 2012.djangocon.eu
 
-[![](screenshots/2013-djangocon-au.png)](https://2013.djangocon.com.au)
+[![](./screenshots/2012-djangocon-eu.png)](https://2012.djangocon.eu)
 
 ----
 
 ### 2013.djangocon.us
 
-[![](screenshots/2013-djangocon-us.png)](https://2013.djangocon.us)
+[![](./screenshots/2013-djangocon-us.png)](https://2013.djangocon.us)
 
 ----
 
-### 2014.djangocon.com.au
+### 2013.djangocon.com.au
 
-[![](screenshots/2014-djangocon-au.png)](https://2014.djangocon.com.au)
+[![](./screenshots/2013-djangocon-au.png)](https://2013.djangocon.com.au)
 
 ----
 
 ### 2014.djangocon.us
 
-[![](screenshots/2014-djangocon-us.png)](https://2014.djangocon.us)
+[![](./screenshots/2014-djangocon-us.png)](https://2014.djangocon.us)
 
 ----
 
-### 2015.djangocon.eu
+### 2014.djangocon.com.au
 
-[![](screenshots/2015-djangocon-eu.png)](https://2015.djangocon.eu)
-
-----
-
-### 2015.djangocon.com.au
-
-[![](screenshots/2015-djangocon-au.png)](https://2015.djangocon.com.au)
+[![](./screenshots/2014-djangocon-au.png)](https://2014.djangocon.com.au)
 
 ----
 
 ### 2015.djangocon.us
 
-[![](screenshots/2015-djangocon-us.png)](https://2015.djangocon.us)
+[![](./screenshots/2015-djangocon-us.png)](https://2015.djangocon.us)
 
 ----
 
-### 2016.djangocon.eu
+### 2015.djangocon.eu
 
-[![](screenshots/2016-djangocon-eu.png)](https://2016.djangocon.eu)
+[![](./screenshots/2015-djangocon-eu.png)](https://2015.djangocon.eu)
 
 ----
 
-### 2016.djangocon.com.au
+### 2015.djangocon.com.au
 
-[![](screenshots/2016-djangocon-au.png)](https://2016.djangocon.com.au)
+[![](./screenshots/2015-djangocon-au.png)](https://2015.djangocon.com.au)
 
 ----
 
 ### 2016.djangocon.us
 
-[![](screenshots/2016-djangocon-us.png)](https://2016.djangocon.us)
+[![](./screenshots/2016-djangocon-us.png)](https://2016.djangocon.us)
 
 ----
 
-### 2017.djangocon.eu
+### 2016.djangocon.eu
 
-[![](screenshots/2017-djangocon-eu.png)](https://2017.djangocon.eu)
+[![](./screenshots/2016-djangocon-eu.png)](https://2016.djangocon.eu)
 
 ----
 
-### 2017.djangocon.com.au
+### 2016.djangocon.com.au
 
-[![](screenshots/2017-djangocon-au.png)](https://2017.djangocon.com.au)
+[![](./screenshots/2016-djangocon-au.png)](https://2016.djangocon.com.au)
 
 ----
 
 ### 2017.djangocon.us
 
-[![](screenshots/2017-djangocon-us.png)](https://2017.djangocon.us)
+[![](./screenshots/2017-djangocon-us.png)](https://2017.djangocon.us)
 
 ----
 
-### 2018.djangocon.eu
+### 2017.djangocon.eu
 
-[![](screenshots/2018-djangocon-eu.png)](https://2018.djangocon.eu)
+[![](./screenshots/2017-djangocon-eu.png)](https://2017.djangocon.eu)
 
 ----
 
-### 2018.djangocon.com.au
+### 2017.djangocon.com.au
 
-[![](screenshots/2018-djangocon-au.png)](https://2018.djangocon.com.au)
+[![](./screenshots/2017-djangocon-au.png)](https://2017.djangocon.com.au)
 
 ----
 
 ### 2018.djangocon.us
 
-[![](screenshots/2018-djangocon-us.png)](https://2018.djangocon.us)
+[![](./screenshots/2018-djangocon-us.png)](https://2018.djangocon.us)
 
 ----
 
-### 2019.djangocon.eu
+### 2018.djangocon.eu
 
-[![](screenshots/2019-djangocon-eu.png)](https://2019.djangocon.eu)
+[![](./screenshots/2018-djangocon-eu.png)](https://2018.djangocon.eu)
 
 ----
 
-### 2019.djangocon.com.au
+### 2018.djangocon.com.au
 
-[![](screenshots/2019-djangocon-au.png)](https://2019.djangocon.com.au)
+[![](./screenshots/2018-djangocon-au.png)](https://2018.djangocon.com.au)
 
 ----
 
 ### 2019.djangocon.us
 
-[![](screenshots/2019-djangocon-us.png)](https://2019.djangocon.us)
+[![](./screenshots/2019-djangocon-us.png)](https://2019.djangocon.us)
 
 ----
 
-### 2020.djangocon.eu
+### 2019.djangocon.eu
 
-[![](screenshots/2020-djangocon-eu.png)](https://2020.djangocon.eu)
+[![](./screenshots/2019-djangocon-eu.png)](https://2019.djangocon.eu)
 
 ----
 
-### 2020.djangocon.com.au
+### 2019.djangocon.com.au
 
-[![](screenshots/2020-djangocon-au.png)](https://2020.djangocon.com.au)
+[![](./screenshots/2019-djangocon-au.png)](https://2019.djangocon.com.au)
 
 ----
 
 ### 2020.djangocon.us
 
-[![](screenshots/2020-djangocon-us.png)](https://2020.djangocon.us)
+[![](./screenshots/2020-djangocon-us.png)](https://2020.djangocon.us)
 
 ----
 
-### 2021.djangocon.eu
+### 2020.djangocon.eu
 
-[![](screenshots/2021-djangocon-eu.png)](https://2021.djangocon.eu)
+[![](./screenshots/2020-djangocon-eu.png)](https://2020.djangocon.eu)
 
 ----
 
-### 2021.djangocon.com.au
+### 2020.djangocon.com.au
 
-[![](screenshots/2021-djangocon-au.png)](https://2021.djangocon.com.au)
+[![](./screenshots/2020-djangocon-au.png)](https://2020.djangocon.com.au)
 
 ----
 
 ### 2021.djangocon.us
 
-[![](screenshots/2021-djangocon-us.png)](https://2021.djangocon.us)
+[![](./screenshots/2021-djangocon-us.png)](https://2021.djangocon.us)
 
 ----
 
-### 2022.djangocon.eu
+### 2021.djangocon.eu
 
-[![](screenshots/2022-djangocon-eu.png)](https://2022.djangocon.eu)
+[![](./screenshots/2021-djangocon-eu.png)](https://2021.djangocon.eu)
 
 ----
 
-### 2022.djangocon.com.au
+### 2021.djangocon.com.au
 
-[![](screenshots/2022-djangocon-au.png)](https://2022.djangocon.com.au)
+[![](./screenshots/2021-djangocon-au.png)](https://2021.djangocon.com.au)
 
 ----
 
 ### 2022.djangocon.us
 
-[![](screenshots/2022-djangocon-us.png)](https://2022.djangocon.us)
+[![](./screenshots/2022-djangocon-us.png)](https://2022.djangocon.us)
 
 ----
 
-### 2023.djangocon.eu
+### 2022.djangocon.eu
 
-[![](screenshots/2023-djangocon-eu.png)](https://2023.djangocon.eu)
+[![](./screenshots/2022-djangocon-eu.png)](https://2022.djangocon.eu)
 
 ----
 
-### 2023.djangocon.com.au
+### 2022.djangocon.com.au
 
-[![](screenshots/2023-djangocon-au.png)](https://2023.djangocon.com.au)
+[![](./screenshots/2022-djangocon-au.png)](https://2022.djangocon.com.au)
 
 ----
 
 ### 2023.djangocon.us
 
-[![](screenshots/2023-djangocon-us.png)](https://2023.djangocon.us)
+[![](./screenshots/2023-djangocon-us.png)](https://2023.djangocon.us)
+
+----
+
+### 2023.djangocon.eu
+
+[![](./screenshots/2023-djangocon-eu.png)](https://2023.djangocon.eu)
+
+----
+
+### 2023.djangocon.com.au
+
+[![](./screenshots/2023-djangocon-au.png)](https://2023.djangocon.com.au)
+
+----
+
+### 2020.djangocon.africa
+
+[![](./screenshots/2020-djangocon-africa.png)](https://2020.djangocon.africa)
+
+----
+
+### 2023.djangocon.africa
+
+[![](./screenshots/2023-djangocon-africa.png)](https://2023.djangocon.africa)
 
 <!-- [[[end]]] -->
 ----

@@ -249,6 +249,12 @@
 
 # [[[end]]]
 
+- output: ./screenshots/2020-djangocon-africa.png
+  height: 1024
+  quality: 80
+  url: https://2020.djangocon.africa
+  width: 1280
+
 - output: ./screenshots/2023-djangocon-africa.png
   height: 1024
   quality: 80
