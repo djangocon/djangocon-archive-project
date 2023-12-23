@@ -333,8 +333,3 @@ with Path("shots.yml").open() as fp:
 [![](./screenshots/2023-djangocon-africa.png)](https://2023.djangocon.africa)
 
 <!-- [[[end]]] -->
-----
-
-### 2023.djangocon.africa
-
-[![](screenshots/2023-djangocon-africa.png)](https://2023.djangocon.africa)
